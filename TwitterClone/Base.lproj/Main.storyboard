@@ -15,8 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aGF-8c-LVr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TWEET_CELL" id="Kcd-ds-rM6">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kcd-ds-rM6" id="AcT-e3-DZE">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eqt-LP-8lb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aGF-8c-LVr" secondAttribute="trailing" id="Ces-cp-olZ"/>
+                            <constraint firstItem="aGF-8c-LVr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KOm-Kk-1yk"/>
+                            <constraint firstItem="aGF-8c-LVr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y0V-Yw-XTr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aGF-8c-LVr" secondAttribute="bottom" id="mYZ-s1-gkU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="aGF-8c-LVr" id="tmV-4v-CZy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

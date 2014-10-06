@@ -8,28 +8,42 @@
 
 import UIKit
 
-class HomeTimeLineViewController: UIViewController {
+class HomeTimeLineViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    var tweets : [Tweet]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let path = NSBundle.mainBundle().pathForResource("tweet", ofType: "json") {
+            var error : NSError?
+            let jsonData = NSData(contentsOfFile: path)
+            
+            self.tweets = Tweet.parseJSONDataIntoTweets(jsonData)
+            
+            println(tweets?.count)
+        }
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if self.tweets != nil {
+            return self.tweets!.count
+        } else {
+            return 0
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TWEET_CELL", forIndexPath: indexPath) as UITableViewCell
+        
+        /* This is where we will grab reference to correct tweet and use it to configure the cell*/
+        
+        let tweet = self.tweets?[indexPath.row]
+        cell.textLabel?.text = tweet?.text
+        cell.backgroundColor = UIColor.lightGrayColor()
+        return cell
     }
-    */
-
+    
 }
