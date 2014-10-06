@@ -43,7 +43,7 @@
 		156668E219E309EB001E21AB /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTimeLineViewController.swift; path = ../HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		156668E619E31370001E21AB /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = ../Tweet.swift; sourceTree = "<group>"; };
 		15A70BA219E32DBE0072058F /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweet.json; sourceTree = "<group>"; };
-		15A70BA419E32FD40072058F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15A70BA419E32FD40072058F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = TwitterClone/README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				156668B919E3098C001E21AB /* TwitterClone */,
+				15A70BA419E32FD40072058F /* README.md */,
 				156668D219E3098C001E21AB /* TwitterCloneTests */,
 				156668B819E3098C001E21AB /* Products */,
 			);
@@ -143,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				156668E219E309EB001E21AB /* HomeTimeLineViewController.swift */,
-				15A70BA419E32FD40072058F /* README.md */,
 			);
 			name = "Controller Layer";
 			sourceTree = "<group>";
