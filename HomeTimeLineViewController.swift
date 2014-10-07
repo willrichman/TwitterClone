@@ -99,13 +99,13 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TWEET_CELL", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("TWEET_CELL", forIndexPath: indexPath) as TimelineTweetTableViewCell
         
         /* This is where we will grab reference to correct tweet and use it to configure the cell*/
         
         let tweet = self.tweets?[indexPath.row]
-        cell.textLabel?.text = tweet?.text
-        cell.detailTextLabel?.text = "Aug 14 12:21"
+        cell.tweetTextLabel?.text = tweet?.text
+        cell.userNameTextLabel?.text = tweet?.profileName
         return cell
     }
     
