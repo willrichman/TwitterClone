@@ -16,7 +16,6 @@
 		156668E319E309EB001E21AB /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156668E219E309EB001E21AB /* HomeTimeLineViewController.swift */; };
 		156668E719E31370001E21AB /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156668E619E31370001E21AB /* Tweet.swift */; };
 		15A70BA319E32DBE0072058F /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 15A70BA219E32DBE0072058F /* tweet.json */; };
-		15A70BA619E32FD40072058F /* README in Sources */ = {isa = PBXBuildFile; fileRef = 15A70BA419E32FD40072058F /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,7 +250,6 @@
 			files = (
 				156668BD19E3098C001E21AB /* AppDelegate.swift in Sources */,
 				156668C019E3098C001E21AB /* TwitterClone.xcdatamodeld in Sources */,
-				15A70BA619E32FD40072058F /* README in Sources */,
 				156668E319E309EB001E21AB /* HomeTimeLineViewController.swift in Sources */,
 				156668E719E31370001E21AB /* Tweet.swift in Sources */,
 			);

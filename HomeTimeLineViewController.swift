@@ -15,7 +15,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.dataSource = self
         if let path = NSBundle.mainBundle().pathForResource("tweet", ofType: "json") {
             var error : NSError?
             let jsonData = NSData(contentsOfFile: path)
@@ -23,7 +23,23 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource {
             self.tweets = Tweet.parseJSONDataIntoTweets(jsonData)
             
             println(tweets?.count)
+            self.sortTweetsAtoZ()
+            println(self.tweets![0].timeStamp)
+            println(self.tweets![1].timeStamp)
+            println(self.tweets![2].timeStamp)
         }
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.sortTweetsAtoZ()
+    }
+    
+    func sortTweetsAtoZ() {
+        self.tweets!.sort {$0.text < $1.text}
+    }
+    
+    func sortTweetsDate() {
         
     }
 
