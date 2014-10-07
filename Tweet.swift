@@ -14,6 +14,7 @@ class Tweet {
     var timeStamp : NSDate
     var profileName : String
     var profileImageURL : String
+    var screenName : String
     let timeStampFormatter = NSDateFormatter()
     var formattedDate = NSDate()
     
@@ -34,6 +35,8 @@ class Tweet {
         let userProfile = tweetDictionary["user"] as NSDictionary
         self.profileName = userProfile["name"] as String
         self.profileImageURL = userProfile["profile_image_url"] as String
+        let baseScreenName = userProfile["screen_name"] as String
+        self.screenName = "@\(baseScreenName)"
     }
     
     class func parseJSONDataIntoTweets(rawJSONData : NSData) -> [Tweet]? {

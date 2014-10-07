@@ -14,5 +14,6 @@ class TimelineTweetTableViewCell: UITableViewCell {
     @IBOutlet weak var tweetTextLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var userNameTextLabel: UILabel!
+    @IBOutlet weak var userScreenName: UILabel!
     
 }

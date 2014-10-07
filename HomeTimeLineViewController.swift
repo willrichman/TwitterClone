@@ -92,6 +92,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         let tweet = self.tweets?[indexPath.row]
         cell.tweetTextLabel?.text = tweet?.text
         cell.userNameTextLabel?.text = tweet?.profileName
+        cell.userScreenName?.text = tweet?.screenName
         let profileImageQueue = NSOperationQueue()
         profileImageQueue.addOperationWithBlock { () -> Void in
             let profileImageURL = NSURL(string: tweet!.profileImageURL)
