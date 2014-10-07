@@ -13,6 +13,7 @@ class Tweet {
     var text : String
     var timeStamp : NSDate
     var profileName : String
+    var profileImageURL : String
     let timeStampFormatter = NSDateFormatter()
     var formattedDate = NSDate()
     
@@ -32,6 +33,7 @@ class Tweet {
         
         let userProfile = tweetDictionary["user"] as NSDictionary
         self.profileName = userProfile["name"] as String
+        self.profileImageURL = userProfile["profile_image_url"] as String
     }
     
     class func parseJSONDataIntoTweets(rawJSONData : NSData) -> [Tweet]? {

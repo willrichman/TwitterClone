@@ -35,17 +35,17 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-p5-TNG">
-                                                    <rect key="frame" x="83" y="8" width="150" height="21"/>
+                                                    <rect key="frame" x="83" y="8" width="150" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="d4W-QJ-qUT"/>
+                                                        <constraint firstAttribute="height" constant="30" id="d4W-QJ-qUT"/>
                                                         <constraint firstAttribute="width" constant="150" id="yXf-Dw-PCp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Text" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mN-mH-CWT">
-                                                    <rect key="frame" x="83" y="37" width="509" height="65"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Text" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.74999999999999978" translatesAutoresizingMaskIntoConstraints="NO" id="3mN-mH-CWT">
+                                                    <rect key="frame" x="73" y="43" width="519" height="59"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -53,11 +53,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="3mN-mH-CWT" firstAttribute="trailing" secondItem="AcT-e3-DZE" secondAttribute="trailingMargin" id="CJo-rs-lnp"/>
-                                                <constraint firstItem="3mN-mH-CWT" firstAttribute="top" secondItem="LgC-p5-TNG" secondAttribute="bottom" constant="8" id="Gcx-AC-yp7"/>
+                                                <constraint firstItem="3mN-mH-CWT" firstAttribute="top" secondItem="LgC-p5-TNG" secondAttribute="bottom" constant="5" id="Gcx-AC-yp7"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="3mN-mH-CWT" secondAttribute="bottom" constant="-0.5" id="O17-ne-WCi"/>
                                                 <constraint firstItem="LgC-p5-TNG" firstAttribute="leading" secondItem="IOF-Bu-9eK" secondAttribute="trailing" constant="15" id="Usr-A5-3et"/>
                                                 <constraint firstItem="IOF-Bu-9eK" firstAttribute="leading" secondItem="AcT-e3-DZE" secondAttribute="leadingMargin" id="X2T-Z0-PZM"/>
-                                                <constraint firstItem="3mN-mH-CWT" firstAttribute="leading" secondItem="IOF-Bu-9eK" secondAttribute="trailing" constant="15" id="b3d-Jh-T95"/>
+                                                <constraint firstItem="3mN-mH-CWT" firstAttribute="leading" secondItem="IOF-Bu-9eK" secondAttribute="trailing" constant="5" id="b3d-Jh-T95"/>
                                                 <constraint firstItem="IOF-Bu-9eK" firstAttribute="top" secondItem="AcT-e3-DZE" secondAttribute="topMargin" id="rgA-1x-Dli"/>
                                                 <constraint firstItem="LgC-p5-TNG" firstAttribute="top" secondItem="AcT-e3-DZE" secondAttribute="topMargin" id="uRb-SF-xPx"/>
                                             </constraints>

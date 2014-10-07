@@ -62,20 +62,6 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
                 
             }
         }
-
-        
-//        if let path = NSBundle.mainBundle().pathForResource("tweet", ofType: "json") {
-//            var error : NSError?
-//            let jsonData = NSData(contentsOfFile: path)
-//            
-//            self.tweets = Tweet.parseJSONDataIntoTweets(jsonData)
-//            
-//            println(tweets?.count)
-//            self.sortTweetsAtoZ()
-//            println(self.tweets![0].timeStamp)
-//            println(self.tweets![1].timeStamp)
-//            println(self.tweets![2].timeStamp)
-//        }
         
     }
     
@@ -106,6 +92,15 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         let tweet = self.tweets?[indexPath.row]
         cell.tweetTextLabel?.text = tweet?.text
         cell.userNameTextLabel?.text = tweet?.profileName
+        let profileImageQueue = NSOperationQueue()
+        profileImageQueue.addOperationWithBlock { () -> Void in
+            let profileImageURL = NSURL(string: tweet!.profileImageURL)
+            let userProfileImageData = NSData(contentsOfURL: profileImageURL)
+            let userProfileImage = UIImage(data: userProfileImageData)
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                cell.profileImage!.image = userProfileImage
+            })
+        }
         return cell
     }
     
