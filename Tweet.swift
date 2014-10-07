@@ -12,18 +12,26 @@ class Tweet {
     
     var text : String
     var timeStamp : NSDate
+    var profileName : String
     let timeStampFormatter = NSDateFormatter()
     var formattedDate = NSDate()
     
     init (tweetDictionary : NSDictionary) {
         self.text = tweetDictionary["text"] as String
+        
+        /* Format the Twitter API timestamp into an NSDate object and assign it to timeStamp*/
+        
         timeStampFormatter.dateFormat = "EEE MMM dd HH:mm:ss Z yyyy"
         if let formattedDate = timeStampFormatter.dateFromString(tweetDictionary["created_at"] as String) {
             self.formattedDate = formattedDate
         }
         else {
+            self.formattedDate = NSDate()
         }
         self.timeStamp = self.formattedDate
+        
+        let userProfile = tweetDictionary["user"] as NSDictionary
+        self.profileName = userProfile["name"] as String
     }
     
     class func parseJSONDataIntoTweets(rawJSONData : NSData) -> [Tweet]? {

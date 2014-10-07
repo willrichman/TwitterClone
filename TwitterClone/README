@@ -7,3 +7,11 @@ Monday:
 - Create groups in your project for the model, view, and controller layer of your app
 - Successfully parse the provided JSON file into Tweet model objects
 - Add a table view to your view controller, and have it display all of the tweets that you parsed from the JSON
+
+Tuesday
+
+- Use the Accounts framework to get access to the user’s twitter account
+- Use the social framework to fetch the users timeline
+- Bake in status code checking into your network call and log out the status code
+- Have your tableview display the user’s timeline once the network operation is completed back on the main thread
+- Create a custom tableview cell class, and display the avatar image for each tweet in an image view on each cell

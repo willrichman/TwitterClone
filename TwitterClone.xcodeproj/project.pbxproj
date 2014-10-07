@@ -16,6 +16,7 @@
 		156668E319E309EB001E21AB /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156668E219E309EB001E21AB /* HomeTimeLineViewController.swift */; };
 		156668E719E31370001E21AB /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156668E619E31370001E21AB /* Tweet.swift */; };
 		15A70BA319E32DBE0072058F /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 15A70BA219E32DBE0072058F /* tweet.json */; };
+		15A70BA919E4784F0072058F /* TimelineTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A70BA819E4784F0072058F /* TimelineTweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		156668E619E31370001E21AB /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = ../Tweet.swift; sourceTree = "<group>"; };
 		15A70BA219E32DBE0072058F /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweet.json; sourceTree = "<group>"; };
 		15A70BA419E32FD40072058F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = TwitterClone/README; sourceTree = "<group>"; };
+		15A70BA819E4784F0072058F /* TimelineTweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				156668C319E3098C001E21AB /* Main.storyboard */,
+				15A70BA819E4784F0072058F /* TimelineTweetTableViewCell.swift */,
 			);
 			name = "View Layer";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				156668BD19E3098C001E21AB /* AppDelegate.swift in Sources */,
+				15A70BA919E4784F0072058F /* TimelineTweetTableViewCell.swift in Sources */,
 				156668C019E3098C001E21AB /* TwitterClone.xcdatamodeld in Sources */,
 				156668E319E309EB001E21AB /* HomeTimeLineViewController.swift in Sources */,
 				156668E719E31370001E21AB /* Tweet.swift in Sources */,
