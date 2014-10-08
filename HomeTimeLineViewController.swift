@@ -65,19 +65,18 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         cell.tweetTextLabel?.text = tweet?.text
         cell.userNameTextLabel?.text = tweet?.profileName
         cell.userScreenName?.text = tweet?.screenName
-        networkController.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
-            if errorDescription == nil {
-                cell.profileImage.image = tweetProfileImage
-            }
-            else {
-                cell.profileImage.image = UIImage(contentsOfFile: "failedImage")
-            }
-        })
+        cell.profileImage?.image = tweet?.profileImage
         return cell
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 120.0
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "singleTweetSegue" {
+            var destination = segue.destinationViewController as SingleTweetViewController
+            var indexPath = tableView.indexPathForSelectedRow()
+            tableView.deselectRowAtIndexPath(indexPath!, animated: true)
+            var tweetToDisplay = self.tweets![indexPath!.row] as Tweet
+            destination.tweetShown = tweetToDisplay
+        }
+    }
     
 }

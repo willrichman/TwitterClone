@@ -81,10 +81,10 @@ class NetworkController {
 
     }
     
-    func fetchProfileImage (tweet: Tweet, completionHandler: (errorDescription : String?, tweetProfileImage: UIImage?) -> Void) {
+    func fetchProfileImage (tweetURL: String, completionHandler: (errorDescription : String?, tweetProfileImage: UIImage?) -> Void) {
         let profileImageQueue = NSOperationQueue()
         profileImageQueue.addOperationWithBlock { () -> Void in
-            let profileImageURL = NSURL(string: tweet.profileImageURL)
+            let profileImageURL = NSURL(string: tweetURL)
             let userProfileImageData = NSData(contentsOfURL: profileImageURL)
             let userProfileImage = UIImage(data: userProfileImageData, scale: UIScreen.mainScreen().scale)
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
