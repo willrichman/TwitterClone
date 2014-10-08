@@ -61,15 +61,9 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         cell.tweetTextLabel?.text = tweet?.text
         cell.userNameTextLabel?.text = tweet?.profileName
         cell.userScreenName?.text = tweet?.screenName
-        let profileImageQueue = NSOperationQueue()
-        profileImageQueue.addOperationWithBlock { () -> Void in
-            let profileImageURL = NSURL(string: tweet!.profileImageURL)
-            let userProfileImageData = NSData(contentsOfURL: profileImageURL)
-            let userProfileImage = UIImage(data: userProfileImageData, scale: UIScreen.mainScreen().scale)
-            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                cell.profileImage!.image = userProfileImage
-            })
-        }
+        networkController.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
+            cell.profileImage.image = tweetProfileImage
+        })
         return cell
     }
     
