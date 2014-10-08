@@ -37,7 +37,11 @@ class Tweet {
         
         let userProfile = tweetDictionary["user"] as NSDictionary
         self.profileName = userProfile["name"] as String
-        self.profileImageURL = userProfile["profile_image_url"] as String
+        let smallProfileImageURL = userProfile["profile_image_url"] as String
+        /*  Takes the URL string and changes it to pull Twitter's bigger profile image.
+            Care of Alex Gordiyenko (github.com/coffellas-cto)                          */
+        let normalRange = smallProfileImageURL.rangeOfString("_normal", options: nil, range: nil, locale: nil)
+        self.profileImageURL = smallProfileImageURL.stringByReplacingCharactersInRange(normalRange!, withString: "_bigger")
         let baseScreenName = userProfile["screen_name"] as String
         self.screenName = "@\(baseScreenName)"
     }
