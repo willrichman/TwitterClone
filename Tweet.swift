@@ -15,7 +15,8 @@ class Tweet {
     var timeStamp : NSDate
     var profileName : String
     var profileImageURL : String
-    var profileImage : UIImage
+    let defaultProfileImage = UIImage(contentsOfFile: "failedImage")
+    var profileImage : UIImage?
     var screenName : String
     let timeStampFormatter = NSDateFormatter()
     var formattedDate = NSDate()
@@ -37,23 +38,8 @@ class Tweet {
         let userProfile = tweetDictionary["user"] as NSDictionary
         self.profileName = userProfile["name"] as String
         self.profileImageURL = userProfile["profile_image_url"] as String
-        self.profileImage = UIImage(contentsOfFile: "failedImage")
         let baseScreenName = userProfile["screen_name"] as String
         self.screenName = "@\(baseScreenName)"
-        
-        /* Download and set the profileImage */
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        let networkController = appDelegate.networkController
-
-        networkController.fetchProfileImage(self.profileImageURL, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
-            if errorDescription == nil {
-                self.profileImage = tweetProfileImage!
-            }
-            else {
-                println(errorDescription)
-            }
-        })
-
     }
     
     class func parseJSONDataIntoTweets(rawJSONData : NSData) -> [Tweet]? {
