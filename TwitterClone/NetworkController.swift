@@ -47,24 +47,28 @@ class NetworkController {
                 twitterRequest.account = self.twitterAccount
                 /* Make network call/request */
                 twitterRequest.performRequestWithHandler({ (HomeTimeLineJSONData, httpResponse, error) -> Void in
-                    
-                    switch httpResponse.statusCode {
-                        
-                    case 200...299:
-                        let tweets = Tweet.parseJSONDataIntoTweets(HomeTimeLineJSONData)
-                        println(tweets?.count)
-                        NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                            completionHandler(errorDescription: nil, tweets: tweets)
-                        })
-                    case 400...499:
-                        println("error on the client")
-                        println(httpResponse.description)
-                        completionHandler(errorDescription: "The connection is having problems", tweets: nil)
-                    case 500...599:
-                        println("error on the server")
-                    default:
-                        println("something bad happened")
-                        
+                    if error == nil {
+                        switch httpResponse.statusCode {
+                            
+                        case 200...299:
+                            let tweets = Tweet.parseJSONDataIntoTweets(HomeTimeLineJSONData)
+                            println(tweets?.count)
+                            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                                completionHandler(errorDescription: nil, tweets: tweets)
+                            })
+                        case 400...499:
+                            println("error on the client")
+                            println(httpResponse.description)
+                            completionHandler(errorDescription: "The connection is having problems", tweets: nil)
+                        case 500...599:
+                            println("error on the server")
+                        default:
+                            println("something bad happened")
+                            
+                        }
+                    }
+                    else {
+                        println(error)
                     }
                 })
             }
@@ -80,7 +84,7 @@ class NetworkController {
     func fetchProfileImage (tweet: Tweet, completionHandler: (errorDescription : String?, tweetProfileImage: UIImage?) -> Void) {
         let profileImageQueue = NSOperationQueue()
         profileImageQueue.addOperationWithBlock { () -> Void in
-            let profileImageURL = NSURL(string: tweet.profileImageURL)
+            let profileImageURL = NSURL(string: ("#\(tweet.profileImageURL)"))
             let userProfileImageData = NSData(contentsOfURL: profileImageURL)
             let userProfileImage = UIImage(data: userProfileImageData, scale: UIScreen.mainScreen().scale)
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in

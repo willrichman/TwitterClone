@@ -62,7 +62,12 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         cell.userNameTextLabel?.text = tweet?.profileName
         cell.userScreenName?.text = tweet?.screenName
         networkController.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
-            cell.profileImage.image = tweetProfileImage
+            if errorDescription == nil {
+                cell.profileImage.image = tweetProfileImage
+            }
+            else {
+                cell.profileImage.image = UIImage(contentsOfFile: "failedImage")
+            }
         })
         return cell
     }
