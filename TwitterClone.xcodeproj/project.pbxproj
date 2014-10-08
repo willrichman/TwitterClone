@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		155DE5EE19E5B4B600E65C64 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		155DE5F019E5D5A000E65C64 /* failedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failedImage.png; sourceTree = "<group>"; };
+		155DE5F019E5D5A000E65C64 /* failedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = failedImage.png; path = TwitterCloneTests/failedImage.png; sourceTree = SOURCE_ROOT; };
 		156668B719E3098C001E21AB /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156668BB19E3098C001E21AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		156668BC19E3098C001E21AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 		156668BA19E3098C001E21AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				155DE5F019E5D5A000E65C64 /* failedImage.png */,
 				156668BB19E3098C001E21AB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -123,7 +124,6 @@
 		156668D319E3098C001E21AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				155DE5F019E5D5A000E65C64 /* failedImage.png */,
 				156668D419E3098C001E21AB /* Info.plist */,
 			);
 			name = "Supporting Files";

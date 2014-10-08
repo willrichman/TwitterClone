@@ -31,6 +31,10 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
                 self.tableView.reloadData()
             }
         }
+        
+        /* Taken from AppCoda http://www.appcoda.com/self-sizing-cells/ */
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -72,8 +76,8 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 120.0
-    }
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return 120.0
+//    }
     
 }
