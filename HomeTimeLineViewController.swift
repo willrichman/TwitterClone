@@ -15,54 +15,22 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     var tweets : [Tweet]?
     var twitterAccount : ACAccount?
+    var networkController : NetworkController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        let accountStore = ACAccountStore()
-        let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
-        
-        /*  The following is asynchronous.
-            We will ask for account access, set up a twitter request, then call the home timeline   */
-        
-        accountStore.requestAccessToAccountsWithType(accountType, options: nil) { (granted: Bool, error: NSError!) -> Void in
-            if granted {
-                
-                /* User gave access */
-                let accounts = accountStore.accountsWithAccountType(accountType)
-                self.twitterAccount = accounts.first as? ACAccount
-                /* Set up our twitter request */
-                let homeTimelineURL = NSURL(string: "https://api.twitter.com/1.1/statuses/home_timeline.json")
-                let twitterRequest = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: homeTimelineURL, parameters: nil)
-                twitterRequest.account = self.twitterAccount
-                /* Make network call/request */
-                twitterRequest.performRequestWithHandler({ (HomeTimeLineJSONData, httpResponse, error) -> Void in
-                    
-                    switch httpResponse.statusCode {
-                        
-                    case 200...299:
-                        self.tweets = Tweet.parseJSONDataIntoTweets(HomeTimeLineJSONData)
-                        println(self.tweets?.count)
-                        NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                            self.tableView.reloadData()
-                        })
-                    case 400...499:
-                        println("error on the client")
-                    case 500...599:
-                        println("error on the server")
-                    default:
-                        println("something bad happened")
-                        
-                    }
-                })
-            }
-            
-            else {
-                
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        self.networkController = appDelegate.networkController
+        self.networkController.fetchHomeTimeLine { (errorDescription, tweets) -> Void in
+            if errorDescription != nil {
+                //alert the user that something went wrong
+            } else {
+                self.tweets = tweets
+                self.tableView.reloadData()
             }
         }
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -97,7 +65,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         profileImageQueue.addOperationWithBlock { () -> Void in
             let profileImageURL = NSURL(string: tweet!.profileImageURL)
             let userProfileImageData = NSData(contentsOfURL: profileImageURL)
-            let userProfileImage = UIImage(data: userProfileImageData)
+            let userProfileImage = UIImage(data: userProfileImageData, scale: UIScreen.mainScreen().scale)
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                 cell.profileImage!.image = userProfileImage
             })

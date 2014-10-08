@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		155DE5EF19E5B4B600E65C64 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DE5EE19E5B4B600E65C64 /* NetworkController.swift */; };
 		156668BD19E3098C001E21AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156668BC19E3098C001E21AB /* AppDelegate.swift */; };
 		156668C019E3098C001E21AB /* TwitterClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 156668BE19E3098C001E21AB /* TwitterClone.xcdatamodeld */; };
 		156668C519E3098C001E21AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156668C319E3098C001E21AB /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		155DE5EE19E5B4B600E65C64 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		156668B719E3098C001E21AB /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156668BB19E3098C001E21AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		156668BC19E3098C001E21AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +89,10 @@
 		156668B919E3098C001E21AB /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				156668BC19E3098C001E21AB /* AppDelegate.swift */,
 				156668E119E309A4001E21AB /* Controller Layer */,
 				156668E019E3099E001E21AB /* View Layer */,
 				156668DF19E30995001E21AB /* Model Layer */,
-				156668BC19E3098C001E21AB /* AppDelegate.swift */,
 				156668C619E3098C001E21AB /* Images.xcassets */,
 				156668C819E3098C001E21AB /* LaunchScreen.xib */,
 				156668BE19E3098C001E21AB /* TwitterClone.xcdatamodeld */,
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				156668E219E309EB001E21AB /* HomeTimeLineViewController.swift */,
+				155DE5EE19E5B4B600E65C64 /* NetworkController.swift */,
 			);
 			name = "Controller Layer";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				156668BD19E3098C001E21AB /* AppDelegate.swift in Sources */,
 				15A70BA919E4784F0072058F /* TimelineTweetTableViewCell.swift in Sources */,
+				155DE5EF19E5B4B600E65C64 /* NetworkController.swift in Sources */,
 				156668C019E3098C001E21AB /* TwitterClone.xcdatamodeld in Sources */,
 				156668E319E309EB001E21AB /* HomeTimeLineViewController.swift in Sources */,
 				156668E719E31370001E21AB /* Tweet.swift in Sources */,
