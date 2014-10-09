@@ -45,8 +45,7 @@ class Tweet {
             Courtesy of Cameron Klein (github.com/cameronklein)                          */
         let normalRange = smallProfileImageURL.rangeOfString("_normal", options: nil, range: nil, locale: nil)
         self.profileImageURL = smallProfileImageURL.stringByReplacingCharactersInRange(normalRange!, withString: "_bigger")
-        let baseScreenName = userProfile["screen_name"] as String
-        self.screenName = "@\(baseScreenName)"
+        self.screenName = userProfile["screen_name"] as String
         self.id = tweetDictionary["id_str"] as String
         self.favoriteCount = tweetDictionary["favorite_count"] as Int
         self.retweetCount = tweetDictionary["retweet_count"] as Int

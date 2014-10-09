@@ -22,7 +22,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView.dataSource = self
         self.tableView.delegate = self
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        NetworkController.controller.fetchHomeTimeLine { (errorDescription, tweets) -> Void in
+        NetworkController.controller.fetchTimeLine("HOME", userScreenname: nil) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
             } else {
@@ -37,14 +37,10 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     override func viewDidAppear(animated: Bool) {
-        //self.sortTweetsAtoZ()
     }
     
     func sortTweetsAtoZ() {
         self.tweets!.sort {$0.text < $1.text}
-    }
-    
-    func sortTweetsDate() {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,7 +59,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         let tweet = self.tweets?[indexPath.row]
         cell.tweetTextLabel?.text = tweet?.text
         cell.userNameTextLabel?.text = tweet?.profileName
-        cell.userScreenName?.text = tweet?.screenName
+        cell.userScreenName?.text = ("@\(tweet!.screenName)")
         if tweet?.profileImage != nil {
             cell.profileImage?.image = tweet?.profileImage
         }

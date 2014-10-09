@@ -34,7 +34,7 @@ class SingleTweetViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.singleTweetUserName.text = self.tweetShown!.profileName
-        self.singleTweetTwitterHandle.text = self.tweetShown!.screenName
+        self.singleTweetTwitterHandle.text = ("@\(self.tweetShown!.screenName)")
         self.singleTweetText.text = self.tweetShown!.text
         self.singleTweetProfileImage.image = self.tweetShown!.profileImage
         self.singleTweetFavoritesCount.text = String(self.tweetShown!.favoriteCount)
