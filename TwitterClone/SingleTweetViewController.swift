@@ -10,6 +10,8 @@ import UIKit
 
 class SingleTweetViewController: UIViewController {
     
+    @IBOutlet weak var singleTweetRTsCount: UILabel!
+    @IBOutlet weak var singleTweetFavoritesCount: UILabel!
     @IBOutlet weak var singleTweetText: UILabel!
     @IBOutlet weak var singleTweetTwitterHandle: UILabel!
     @IBOutlet weak var singleTweetUserName: UILabel!
@@ -18,7 +20,6 @@ class SingleTweetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -28,10 +29,12 @@ class SingleTweetViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.singleTweetUserName.text = tweetShown!.profileName
-        self.singleTweetTwitterHandle.text = tweetShown!.screenName
-        self.singleTweetText.text = tweetShown!.text
-        self.singleTweetProfileImage.image = tweetShown!.profileImage
+        self.singleTweetUserName.text = self.tweetShown!.profileName
+        self.singleTweetTwitterHandle.text = self.tweetShown!.screenName
+        self.singleTweetText.text = self.tweetShown!.text
+        self.singleTweetProfileImage.image = self.tweetShown!.profileImage
+        self.singleTweetFavoritesCount.text = String(self.tweetShown!.favoriteCount)
+        self.singleTweetRTsCount.text = String(self.tweetShown!.retweetCount)
     }
 
     /*

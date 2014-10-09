@@ -18,6 +18,9 @@ class Tweet {
     let defaultProfileImage = UIImage(contentsOfFile: "failedImage")
     var profileImage : UIImage?
     var screenName : String
+    var id : String
+    var favoriteCount : Int
+    var retweetCount : Int
     let timeStampFormatter = NSDateFormatter()
     var formattedDate = NSDate()
     
@@ -39,11 +42,14 @@ class Tweet {
         self.profileName = userProfile["name"] as String
         let smallProfileImageURL = userProfile["profile_image_url"] as String
         /*  Takes the URL string and changes it to pull Twitter's bigger profile image.
-            Care of Alex Gordiyenko (github.com/coffellas-cto)                          */
+            Courtesy of Cameron Klein (github.com/cameronklein)                          */
         let normalRange = smallProfileImageURL.rangeOfString("_normal", options: nil, range: nil, locale: nil)
         self.profileImageURL = smallProfileImageURL.stringByReplacingCharactersInRange(normalRange!, withString: "_bigger")
         let baseScreenName = userProfile["screen_name"] as String
         self.screenName = "@\(baseScreenName)"
+        self.id = tweetDictionary["id_str"] as String
+        self.favoriteCount = tweetDictionary["favorite_count"] as Int
+        self.retweetCount = tweetDictionary["retweet_count"] as Int
     }
     
     class func parseJSONDataIntoTweets(rawJSONData : NSData) -> [Tweet]? {
@@ -70,5 +76,5 @@ class Tweet {
         }
         return nil
     }
-    
+
 }

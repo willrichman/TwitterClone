@@ -92,4 +92,56 @@ class NetworkController {
             })
         }
     }
+    
+    func fetchTweetDetails (tweet: Tweet, completionHandler: (errorDescription : String?, tweet: Tweet) -> Void) {
+        let accountStore = ACAccountStore()
+        let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
+        
+        /*  The following is asynchronous.
+        We will ask for account access, set up a twitter request, then call the home timeline   */
+        
+        accountStore.requestAccessToAccountsWithType(accountType, options: nil) { (granted: Bool, error: NSError!) -> Void in
+            if granted {
+                
+                /* User gave access */
+                let accounts = accountStore.accountsWithAccountType(accountType)
+                self.twitterAccount = accounts.first as? ACAccount
+                /* Set up our twitter request */
+                let tweetDetailURL = NSURL(string: "https://api.twitter.com/1.1/statuses/show.json")
+                let twitterRequest = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: tweetDetailURL, parameters: ["id": tweet.id])
+                twitterRequest.account = self.twitterAccount
+                /* Make network call/request */
+                twitterRequest.performRequestWithHandler({ (HomeTimeLineJSONData, httpResponse, error) -> Void in
+                    if error == nil {
+                        switch httpResponse.statusCode {
+                            
+                        case 200...299:
+                            let tweets = Tweet.parseJSONDataIntoTweets(HomeTimeLineJSONData)
+                            println(tweets?.count)
+                            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                                
+                            })
+                        case 400...499:
+                            println("error on the client")
+                            println(httpResponse.description)
+                            
+                        case 500...599:
+                            println("error on the server")
+                        default:
+                            println("something bad happened")
+                            
+                        }
+                    }
+                    else {
+                        println(error)
+                    }
+                })
+            }
+                
+            else {
+                
+            }
+        }
+
+    }
 }
