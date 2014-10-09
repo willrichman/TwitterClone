@@ -43,6 +43,7 @@ class NetworkController {
                 /* User gave access */
                 let accounts = accountStore.accountsWithAccountType(accountType)
                 self.twitterAccount = accounts.first as? ACAccount
+                
                 /* Set up our twitter request, depending on which timeline is requested*/
                 var timelineURL : NSURL?
                 var parameters: Dictionary<String, String>?
@@ -53,19 +54,23 @@ class NetworkController {
                     timelineURL = NSURL(string: "https://api.twitter.com/1.1/statuses/user_timeline.json")
                     parameters = ["screen_name": userScreenname!]
                 default:
-                    println("That account type doesn't work")
+                    println("That timeline type doesn't work")
                 }
                 
-                let twitterRequest = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: timelineURL, parameters: nil)
+                let twitterRequest = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: timelineURL, parameters: parameters)
                 twitterRequest.account = self.twitterAccount
+                
                 /* Make network call/request */
-                twitterRequest.performRequestWithHandler({ (HomeTimeLineJSONData, httpResponse, error) -> Void in
+                twitterRequest.performRequestWithHandler({ (timeLineJSONData, httpResponse, error) -> Void in
                     if error == nil {
                         switch httpResponse.statusCode {
                             
                         case 200...299:
-                            let tweets = Tweet.parseJSONDataIntoTweets(HomeTimeLineJSONData)
-                            println(tweets?.count)
+                            let tweets = Tweet.parseJSONDataIntoTweets(timeLineJSONData)
+                            //var error : NSError?
+                            //let JSONArray = NSJSONSerialization.JSONObjectWithData(timeLineJSONData, options: nil, error: &error) as? NSArray
+                            //println(JSONArray)
+                            //println(tweets?.count)
                             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                                 completionHandler(errorDescription: nil, tweets: tweets)
                             })

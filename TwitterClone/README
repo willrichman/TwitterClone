@@ -8,7 +8,7 @@ Monday:
 - Successfully parse the provided JSON file into Tweet model objects
 - Add a table view to your view controller, and have it display all of the tweets that you parsed from the JSON
 
-Tuesday
+Tuesday:
 
 - Use the Accounts framework to get access to the user’s twitter account
 - Use the social framework to fetch the users timeline
@@ -23,7 +23,7 @@ Wednesday:
 - Move your image downloading to the network controller as well.
 - Using autolayout on your custom cell, achieve dynamic cell height.  Check out this blog post to get you started with this particular feature: http://www.appcoda.com/self-sizing-cells/ (Links to an external site.)
 
-Thursday
+Thursday:
 
 -Remove all Segues from your app, and instead use the push and pop methods on your navigation controller.
 -Create a nib for your tweet cell, so we don't have to layout the same tableview cell in multiple spots.

@@ -22,7 +22,6 @@ class SingleTweetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.singleTweetUserBar.layer.cornerRadius = 10
-        self.singleTweetUserBar.layer.shadowRadius = 1
         
         // Do any additional setup after loading the view.
     }
@@ -39,6 +38,9 @@ class SingleTweetViewController: UIViewController {
         self.singleTweetProfileImage.image = self.tweetShown!.profileImage
         self.singleTweetFavoritesCount.text = String(self.tweetShown!.favoriteCount)
         self.singleTweetRTsCount.text = String(self.tweetShown!.retweetCount)
+        
+        let press = UITapGestureRecognizer(target: self, action: Selector("segueAction:"))
+        self.singleTweetProfileImage.addGestureRecognizer(press)
     }
 
     /*
@@ -50,5 +52,14 @@ class SingleTweetViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func segueAction(recognizer: UITapGestureRecognizer) {
+        let userTimelineVC = self.storyboard?.instantiateViewControllerWithIdentifier("TIMELINE_VC") as HomeTimeLineViewController
+        let userToDisplay = tweetShown?.screenName
+        userTimelineVC.userTimelineShown = userToDisplay
+        userTimelineVC.timelineType = "USER"
+        userTimelineVC.tweetOrigin = tweetShown
+        self.navigationController?.pushViewController(userTimelineVC, animated: true)
+    }
+    
 }

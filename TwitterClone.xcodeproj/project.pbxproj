@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		155DE5EF19E5B4B600E65C64 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DE5EE19E5B4B600E65C64 /* NetworkController.swift */; };
-		155DE5F119E5D5A000E65C64 /* failedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 155DE5F019E5D5A000E65C64 /* failedImage.png */; };
 		155DE5F519E5E7A900E65C64 /* SingleTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DE5F419E5E7A900E65C64 /* SingleTweetViewController.swift */; };
 		155DE5F719E5FBF700E65C64 /* retweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 155DE5F619E5FBF700E65C64 /* retweet.png */; };
 		155DE5F919E5FE1D00E65C64 /* favorite20.png in Resources */ = {isa = PBXBuildFile; fileRef = 155DE5F819E5FE1D00E65C64 /* favorite20.png */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		155DE5EE19E5B4B600E65C64 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		155DE5F019E5D5A000E65C64 /* failedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = failedImage.png; path = TwitterCloneTests/failedImage.png; sourceTree = SOURCE_ROOT; };
 		155DE5F419E5E7A900E65C64 /* SingleTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTweetViewController.swift; sourceTree = "<group>"; };
 		155DE5F619E5FBF700E65C64 /* retweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retweet.png; path = ../retweet.png; sourceTree = "<group>"; };
 		155DE5F819E5FE1D00E65C64 /* favorite20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite20.png; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			children = (
 				155DE5F819E5FE1D00E65C64 /* favorite20.png */,
 				155DE5F619E5FBF700E65C64 /* retweet.png */,
-				155DE5F019E5D5A000E65C64 /* failedImage.png */,
 				156668BB19E3098C001E21AB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -262,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				155DE5F119E5D5A000E65C64 /* failedImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

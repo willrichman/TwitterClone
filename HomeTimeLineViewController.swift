@@ -7,14 +7,17 @@
 //
 
 import UIKit
-import Accounts
-import Social
 
 class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var userScreenNameLabel: UILabel!
+    @IBOutlet weak var userProfileNameLabel: UILabel!
+    @IBOutlet weak var userProfileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     var tweets : [Tweet]?
-    var twitterAccount : ACAccount?
+    var timelineType = "HOME"
+    var userTimelineShown : String?
+    var tweetOrigin : Tweet?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView.dataSource = self
         self.tableView.delegate = self
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        NetworkController.controller.fetchTimeLine("HOME", userScreenname: nil) { (errorDescription, tweets) -> Void in
+        NetworkController.controller.fetchTimeLine(timelineType, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
             } else {
@@ -34,9 +37,17 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         /* Taken from AppCoda http://www.appcoda.com/self-sizing-cells/ */
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+        if timelineType == "HOME" {
+            self.tableView.tableHeaderView = nil
+        } else if timelineType == "USER" {
+            self.userScreenNameLabel.text = tweetOrigin?.screenName
+            self.userProfileNameLabel.text = tweetOrigin?.profileName
+            self.userProfileImage.image = tweetOrigin?.profileImage
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
+
     }
     
     func sortTweetsAtoZ() {
@@ -78,6 +89,11 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
             })
         }
         
+        
+        cell.profileImage?.layer.borderColor = UIColor.whiteColor().CGColor;
+        cell.profileImage?.layer.borderWidth = cell.profileImage!.frame.size.width * 0.05
+        cell.profileImage?.layer.cornerRadius = cell.profileImage!.frame.size.width * 0.1
+        cell.profileImage?.clipsToBounds = true
         return cell
     }
     

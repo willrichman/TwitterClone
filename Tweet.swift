@@ -46,6 +46,7 @@ class Tweet {
         let normalRange = smallProfileImageURL.rangeOfString("_normal", options: nil, range: nil, locale: nil)
         self.profileImageURL = smallProfileImageURL.stringByReplacingCharactersInRange(normalRange!, withString: "_bigger")
         self.screenName = userProfile["screen_name"] as String
+
         self.id = tweetDictionary["id_str"] as String
         self.favoriteCount = tweetDictionary["favorite_count"] as Int
         self.retweetCount = tweetDictionary["retweet_count"] as Int
