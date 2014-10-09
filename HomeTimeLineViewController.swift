@@ -15,15 +15,13 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     var tweets : [Tweet]?
     var twitterAccount : ACAccount?
-    var networkController : NetworkController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        self.networkController = appDelegate.networkController
-        self.networkController.fetchHomeTimeLine { (errorDescription, tweets) -> Void in
+        NetworkController.controller.fetchHomeTimeLine { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
             } else {
@@ -70,10 +68,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         }
         else {
             /* Download and set the profileImage */
-            let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-            let networkController = appDelegate.networkController
-            
-            networkController.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
+            NetworkController.controller.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
                 if errorDescription == nil {
                     tweet?.profileImage = tweetProfileImage!
                     cell.profileImage?.image = tweet?.profileImage

@@ -12,15 +12,16 @@ import Social
 
 class NetworkController {
     
-    /*class var sharedInstance: NetworkController {
-    struct Static {
-        static var instance: NetworkController?
-        static var token: dispatch_once_t = 0
+    class var controller: NetworkController {
+        struct Static {
+            static var onceToken : dispatch_once_t = 0
+            static var instance : NetworkController? = nil
         }
-        dispatch_one(&Static.token) {
-            Static.instace = NetworkController()
+        dispatch_once(&Static.onceToken) {
+            Static.instance = NetworkController()
         }
-    }*/
+        return Static.instance!
+    }
     
     var twitterAccount : ACAccount?
     

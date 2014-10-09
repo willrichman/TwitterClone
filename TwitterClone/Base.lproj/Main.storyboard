@@ -247,7 +247,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97254908084869385" green="0.90980398654937744" blue="0.91372555494308472" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="csB-bC-cgp" firstAttribute="leading" secondItem="cXT-S2-n9L" secondAttribute="leadingMargin" id="3LY-Jc-5pO"/>
                             <constraint firstItem="gO1-m1-ctp" firstAttribute="leading" secondItem="cXT-S2-n9L" secondAttribute="leadingMargin" id="7zh-4C-bHm"/>
