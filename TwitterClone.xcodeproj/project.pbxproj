@@ -12,6 +12,7 @@
 		155DE5F519E5E7A900E65C64 /* SingleTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DE5F419E5E7A900E65C64 /* SingleTweetViewController.swift */; };
 		155DE5F719E5FBF700E65C64 /* retweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 155DE5F619E5FBF700E65C64 /* retweet.png */; };
 		155DE5F919E5FE1D00E65C64 /* favorite20.png in Resources */ = {isa = PBXBuildFile; fileRef = 155DE5F819E5FE1D00E65C64 /* favorite20.png */; };
+		155DE62C19E7086B00E65C64 /* TimelineTweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155DE62B19E7086B00E65C64 /* TimelineTweetTableViewCell.xib */; };
 		156668BD19E3098C001E21AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156668BC19E3098C001E21AB /* AppDelegate.swift */; };
 		156668C019E3098C001E21AB /* TwitterClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 156668BE19E3098C001E21AB /* TwitterClone.xcdatamodeld */; };
 		156668C519E3098C001E21AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156668C319E3098C001E21AB /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		155DE5F419E5E7A900E65C64 /* SingleTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTweetViewController.swift; sourceTree = "<group>"; };
 		155DE5F619E5FBF700E65C64 /* retweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retweet.png; path = ../retweet.png; sourceTree = "<group>"; };
 		155DE5F819E5FE1D00E65C64 /* favorite20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite20.png; sourceTree = "<group>"; };
+		155DE62B19E7086B00E65C64 /* TimelineTweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTweetTableViewCell.xib; sourceTree = "<group>"; };
 		156668B719E3098C001E21AB /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156668BB19E3098C001E21AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		156668BC19E3098C001E21AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				156668C319E3098C001E21AB /* Main.storyboard */,
+				155DE62B19E7086B00E65C64 /* TimelineTweetTableViewCell.xib */,
 				15A70BA819E4784F0072058F /* TimelineTweetTableViewCell.swift */,
 			);
 			name = "View Layer";
@@ -248,6 +251,7 @@
 				156668C519E3098C001E21AB /* Main.storyboard in Resources */,
 				155DE5F919E5FE1D00E65C64 /* favorite20.png in Resources */,
 				155DE5F719E5FBF700E65C64 /* retweet.png in Resources */,
+				155DE62C19E7086B00E65C64 /* TimelineTweetTableViewCell.xib in Resources */,
 				156668CA19E3098C001E21AB /* LaunchScreen.xib in Resources */,
 				156668C719E3098C001E21AB /* Images.xcassets in Resources */,
 				15A70BA319E32DBE0072058F /* tweet.json in Resources */,

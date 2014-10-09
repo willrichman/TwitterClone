@@ -10,6 +10,7 @@ import UIKit
 
 class SingleTweetViewController: UIViewController {
     
+    @IBOutlet weak var singleTweetUserBar: UIView!
     @IBOutlet weak var singleTweetRTsCount: UILabel!
     @IBOutlet weak var singleTweetFavoritesCount: UILabel!
     @IBOutlet weak var singleTweetText: UILabel!
@@ -20,6 +21,9 @@ class SingleTweetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.singleTweetUserBar.layer.cornerRadius = 10
+        self.singleTweetUserBar.layer.shadowRadius = 1
+        
         // Do any additional setup after loading the view.
     }
 

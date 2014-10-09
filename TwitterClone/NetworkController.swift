@@ -24,9 +24,10 @@ class NetworkController {
     }
     
     var twitterAccount : ACAccount?
+    let profileImageQueue = NSOperationQueue()
     
     init () {
-        
+        self.profileImageQueue.maxConcurrentOperationCount = 6
     }
     
     func fetchHomeTimeLine (completionHandler: (errorDescription : String?, tweets : [Tweet]?) -> Void) {
@@ -83,8 +84,7 @@ class NetworkController {
     }
     
     func fetchProfileImage (tweet: Tweet, completionHandler: (errorDescription : String?, tweetProfileImage: UIImage?) -> Void) {
-        let profileImageQueue = NSOperationQueue()
-        profileImageQueue.addOperationWithBlock { () -> Void in
+        self.profileImageQueue.addOperationWithBlock { () -> Void in
             let profileImageURL = NSURL(string: tweet.profileImageURL)
             let userProfileImageData = NSData(contentsOfURL: profileImageURL)
             let userProfileImage = UIImage(data: userProfileImageData, scale: UIScreen.mainScreen().scale)
@@ -95,6 +95,7 @@ class NetworkController {
     }
     
     func fetchTweetDetails (tweet: Tweet, completionHandler: (errorDescription : String?, tweet: Tweet) -> Void) {
+        /* A redundant method.  Created originally to pull more detailed JSON on tweet, before we discovered that the keys we needed were already called in the HomeTimeLine call */
         let accountStore = ACAccountStore()
         let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
         

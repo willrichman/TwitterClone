@@ -13,12 +13,13 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let networkController = NetworkController()
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
+        //let rootViewController = window?.rootViewController
+        //let navController = UINavigationController(rootViewController: rootViewController!)
+        //window?.rootViewController = navController
     }
 
     func applicationWillResignActive(application: UIApplication) {

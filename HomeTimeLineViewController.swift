@@ -18,6 +18,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.registerNib(UINib(nibName: "TimelineTweetTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TWEET_CELL")
         self.tableView.dataSource = self
         self.tableView.delegate = self
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -69,9 +70,10 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         else {
             /* Download and set the profileImage */
             NetworkController.controller.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
+                let cellForImage = self.tableView.cellForRowAtIndexPath(indexPath) as TimelineTweetTableViewCell?
                 if errorDescription == nil {
                     tweet?.profileImage = tweetProfileImage!
-                    cell.profileImage?.image = tweet?.profileImage
+                    cellForImage?.profileImage?.image = tweet?.profileImage
                 }
                 else {
                     println(errorDescription)
