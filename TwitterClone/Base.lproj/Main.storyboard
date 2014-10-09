@@ -98,7 +98,6 @@
                                             <outlet property="tweetTextLabel" destination="3mN-mH-CWT" id="RzV-iN-Icc"/>
                                             <outlet property="userNameTextLabel" destination="LgC-p5-TNG" id="d4r-0i-kep"/>
                                             <outlet property="userScreenName" destination="4uU-va-a3U" id="EYI-Gk-QsG"/>
-                                            <segue destination="vZq-OG-stP" kind="show" identifier="singleTweetSegue" id="wBf-YP-wjL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -137,7 +136,7 @@
         <!--Single Tweet View Controller-->
         <scene sceneID="9Y5-lv-e98">
             <objects>
-                <viewController id="vZq-OG-stP" customClass="SingleTweetViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SINGLE_TWEET_VC" id="vZq-OG-stP" customClass="SingleTweetViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SwI-kN-1hC"/>
                         <viewControllerLayoutGuide type="bottom" id="t1D-Wt-JWU"/>

@@ -85,14 +85,14 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == "singleTweetSegue" {
-            var destination = segue.destinationViewController as SingleTweetViewController
-            var indexPath = tableView.indexPathForSelectedRow()
-            tableView.deselectRowAtIndexPath(indexPath!, animated: true)
-            var tweetToDisplay = self.tweets![indexPath!.row] as Tweet
-            destination.tweetShown = tweetToDisplay
-        }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let singleTweetVC = self.storyboard?.instantiateViewControllerWithIdentifier("SINGLE_TWEET_VC") as SingleTweetViewController
+        var indexPath = tableView.indexPathForSelectedRow()
+        tableView.deselectRowAtIndexPath(indexPath!, animated: true)
+        var tweetToDisplay = self.tweets![indexPath!.row] as Tweet
+        singleTweetVC.tweetShown = tweetToDisplay
+        self.navigationController?.pushViewController(singleTweetVC, animated: true)
     }
+    
     
 }
