@@ -15,7 +15,8 @@ class Tweet {
     var timeStamp : NSDate
     var profileName : String
     var profileImageURL : String
-    let defaultProfileImage = UIImage(contentsOfFile: "failedImage")
+    var profileBackgroundImageURL : String
+    let defaultBanner = "https://pbs.twimg.com/profile_banners/783214/1347405327/600x200"
     var profileImage : UIImage?
     var screenName : String
     var id : String
@@ -45,8 +46,14 @@ class Tweet {
             Courtesy of Cameron Klein (github.com/cameronklein)                          */
         let normalRange = smallProfileImageURL.rangeOfString("_normal", options: nil, range: nil, locale: nil)
         self.profileImageURL = smallProfileImageURL.stringByReplacingCharactersInRange(normalRange!, withString: "_bigger")
+        if let bannerURL = userProfile["profile_banner_url"] as? String {
+            self.profileBackgroundImageURL = bannerURL
+        }
+        else {
+            self.profileBackgroundImageURL = self.defaultBanner
+        }
+        
         self.screenName = userProfile["screen_name"] as String
-
         self.id = tweetDictionary["id_str"] as String
         self.favoriteCount = tweetDictionary["favorite_count"] as Int
         self.retweetCount = tweetDictionary["retweet_count"] as Int

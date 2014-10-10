@@ -38,7 +38,7 @@
                                                 <constraint firstAttribute="height" constant="53" id="vGv-Rr-yOa"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@twitterhandle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkp-A6-MvQ">
@@ -47,9 +47,12 @@
                                                 <constraint firstAttribute="height" constant="20" id="a8t-3O-OQz"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" red="0.228638852" green="0.63460543130000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-2a-16U">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.228638852" green="0.63460543130000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
@@ -156,13 +159,13 @@
                             <mask key="constraints">
                                 <exclude reference="Uh3-NY-FSr"/>
                                 <exclude reference="kV8-xA-pY9"/>
-                                <exclude reference="o83-eg-zSY"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Hyt-HM-k8Y"/>
                     <connections>
                         <outlet property="tableView" destination="aGF-8c-LVr" id="tmV-4v-CZy"/>
+                        <outlet property="userProfileBackgroundImage" destination="IfI-2a-16U" id="Qi3-aD-2qU"/>
                         <outlet property="userProfileImage" destination="004-Aw-UsE" id="k2T-zR-JYs"/>
                         <outlet property="userProfileNameLabel" destination="nCa-bp-TCD" id="Rw5-of-z6h"/>
                         <outlet property="userScreenNameLabel" destination="Gkp-A6-MvQ" id="3Ia-lc-TK0"/>
@@ -221,7 +224,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89411771299999998" green="0.89411771299999998" blue="0.8980392814" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstItem="nNl-qr-gAv" firstAttribute="top" secondItem="ujn-aH-hMz" secondAttribute="top" id="2cy-P6-MX6"/>
                                     <constraint firstAttribute="height" constant="100" id="E2B-W9-pbt"/>

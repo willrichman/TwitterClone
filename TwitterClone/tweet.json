@@ -1,260 +1,4537 @@
-[
+ [
   {
-    "coordinates": null,
-    "truncated": false,
-    "created_at": "Tue Aug 28 21:16:23 +0000 2012",
-    "favorited": false,
-    "id_str": "240558470661799936",
-    "in_reply_to_user_id_str": null,
-    "entities": {
-      "urls": [
- 
-      ],
-      "hashtags": [
- 
-      ],
-      "user_mentions": [
- 
-      ]
-    },
-    "text": "just another test",
-    "contributors": null,
-    "id": 240558470661799936,
-    "retweet_count": 0,
-    "in_reply_to_status_id_str": null,
-    "geo": null,
-    "retweeted": false,
-    "in_reply_to_user_id": null,
-    "place": null,
-    "user": {
-      "name": "OAuth Dancer",
-      "profile_sidebar_fill_color": "DDEEF6",
-      "profile_background_tile": true,
-      "profile_sidebar_border_color": "C0DEED",
-      "profile_image_url": "http://a0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg",
-      "created_at": "Wed Mar 03 19:37:35 +0000 2010",
-      "location": "San Francisco, CA",
-      "follow_request_sent": false,
-      "id_str": "119476949",
-      "is_translator": false,
-      "profile_link_color": "0084B4",
-      "entities": {
-        "url": {
-          "urls": [
-            {
-              "expanded_url": null,
-              "url": "http://bit.ly/oauth-dancer",
-              "indices": [
-                0,
-                26
-              ],
-              "display_url": null
-            }
-          ]
-        },
-        "description": null
-      },
-      "default_profile": false,
-      "url": "http://bit.ly/oauth-dancer",
-      "contributors_enabled": false,
-      "favourites_count": 7,
-      "utc_offset": null,
-      "profile_image_url_https": "https://si0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg",
-      "id": 119476949,
-      "listed_count": 1,
-      "profile_use_background_image": true,
-      "profile_text_color": "333333",
-      "followers_count": 28,
-      "lang": "en",
-      "protected": false,
-      "geo_enabled": true,
-      "notifications": false,
-      "description": "",
-      "profile_background_color": "C0DEED",
-      "verified": false,
-      "time_zone": null,
-      "profile_background_image_url_https": "https://si0.twimg.com/profile_background_images/80151733/oauth-dance.png",
-      "statuses_count": 166,
-      "profile_background_image_url": "http://a0.twimg.com/profile_background_images/80151733/oauth-dance.png",
-      "default_profile_image": false,
-      "friends_count": 14,
-      "following": false,
-      "show_all_inline_media": false,
-      "screen_name": "oauth_dancer"
-    },
-    "in_reply_to_screen_name": null,
-    "in_reply_to_status_id": null
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:33:30 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=({
+        "display_url"="avc.lu/1slES6y",
+        "expanded_url"="http://avc.lu/1slES6y",
+        indices=(69,
+                 91),
+        url="http://t.co/5blwAnMZsR",
+        
+        }),
+  "user_mentions"=(),
+  
   },
- {
- "coordinates": null,
- "truncated": false,
- "created_at": "Tue Aug 28 21:14:23 +0000 2012",
- "favorited": false,
- "id_str": "240558470661799936",
- "in_reply_to_user_id_str": null,
- "entities": {
- "urls": [
- 
- ],
- "hashtags": [
- 
- ],
- "user_mentions": [
- 
- ]
- },
- "text": "go seahawks",
- "contributors": null,
- "id": 240558470661799936,
- "retweet_count": 0,
- "in_reply_to_status_id_str": null,
- "geo": null,
- "retweeted": false,
- "in_reply_to_user_id": null,
- "place": null,
- "user": {
- "name": "OAuth Dancer",
- "profile_sidebar_fill_color": "DDEEF6",
- "profile_background_tile": true,
- "profile_sidebar_border_color": "C0DEED",
- "profile_image_url": "http://a0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg",
- "created_at": "Wed Mar 03 19:37:35 +0000 2010",
- "location": "San Francisco, CA",
- "follow_request_sent": false,
- "id_str": "119476949",
- "is_translator": false,
- "profile_link_color": "0084B4",
- "entities": {
- "url": {
- "urls": [
-          {
-          "expanded_url": null,
-          "url": "http://bit.ly/oauth-dancer",
-          "indices": [
-                      0,
-                      26
-                      ],
-          "display_url": null
-          }
-          ]
- },
- "description": null
- },
- "default_profile": false,
- "url": "http://bit.ly/oauth-dancer",
- "contributors_enabled": false,
- "favourites_count": 7,
- "utc_offset": null,
- "profile_image_url_https": "https://si0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg",
- "id": 119476949,
- "listed_count": 1,
- "profile_use_background_image": true,
- "profile_text_color": "333333",
- "followers_count": 28,
- "lang": "en",
- "protected": false,
- "geo_enabled": true,
- "notifications": false,
- "description": "",
- "profile_background_color": "C0DEED",
- "verified": false,
- "time_zone": null,
- "profile_background_image_url_https": "https://si0.twimg.com/profile_background_images/80151733/oauth-dance.png",
- "statuses_count": 166,
- "profile_background_image_url": "http://a0.twimg.com/profile_background_images/80151733/oauth-dance.png",
- "default_profile_image": false,
- "friends_count": 14,
- "following": false,
- "show_all_inline_media": false,
- "screen_name": "oauth_dancer"
- },
- "in_reply_to_screen_name": null,
- "in_reply_to_status_id": null
- },
- {
- "coordinates": null,
- "truncated": false,
- "created_at": "Tue Aug 28 21:12:23 +0000 2012",
- "favorited": false,
- "id_str": "240558470661799936",
- "in_reply_to_user_id_str": null,
- "entities": {
- "urls": [
- 
- ],
- "hashtags": [
- 
- ],
- "user_mentions": [
- 
- ]
- },
- "text": "hooray technology",
- "contributors": null,
- "id": 240558470661799936,
- "retweet_count": 0,
- "in_reply_to_status_id_str": null,
- "geo": null,
- "retweeted": false,
- "in_reply_to_user_id": null,
- "place": null,
- "user": {
- "name": "OAuth Dancer",
- "profile_sidebar_fill_color": "DDEEF6",
- "profile_background_tile": true,
- "profile_sidebar_border_color": "C0DEED",
- "profile_image_url": "http://a0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg",
- "created_at": "Wed Mar 03 19:37:35 +0000 2010",
- "location": "San Francisco, CA",
- "follow_request_sent": false,
- "id_str": "119476949",
- "is_translator": false,
- "profile_link_color": "0084B4",
- "entities": {
- "url": {
- "urls": [
-          {
-          "expanded_url": null,
-          "url": "http://bit.ly/oauth-dancer",
-          "indices": [
-                      0,
-                      26
-                      ],
-          "display_url": null
-          }
-          ]
- },
- "description": null
- },
- "default_profile": false,
- "url": "http://bit.ly/oauth-dancer",
- "contributors_enabled": false,
- "favourites_count": 7,
- "utc_offset": null,
- "profile_image_url_https": "https://si0.twimg.com/profile_images/730275945/oauth-dancer_normal.jpg",
- "id": 119476949,
- "listed_count": 1,
- "profile_use_background_image": true,
- "profile_text_color": "333333",
- "followers_count": 28,
- "lang": "en",
- "protected": false,
- "geo_enabled": true,
- "notifications": false,
- "description": "",
- "profile_background_color": "C0DEED",
- "verified": false,
- "time_zone": null,
- "profile_background_image_url_https": "https://si0.twimg.com/profile_background_images/80151733/oauth-dance.png",
- "statuses_count": 166,
- "profile_background_image_url": "http://a0.twimg.com/profile_background_images/80151733/oauth-dance.png",
- "default_profile_image": false,
- "friends_count": 14,
- "following": false,
- "show_all_inline_media": false,
- "screen_name": "oauth_dancer"
- },
- "in_reply_to_screen_name": null,
- "in_reply_to_status_id": null
- }
-]
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520643301746425857,
+  "id_str"=520643301746425857,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=2,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="ABC orders full seasons of How To Get Away With Murder and Black-ish http://t.co/5blwAnMZsR",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu Aug 28 15:07:34 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Pop culture obsessives writing for the pop culture obsessed. Also https://t.co/Khsgc1BDIX",
+  entities={
+  description={
+  urls=({
+        "display_url"="facebook.com/theavclub",
+        "expanded_url"="https://www.facebook.com/theavclub",
+        indices=(66,
+                 89),
+        url="https://t.co/Khsgc1BDIX",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="avclub.com",
+        "expanded_url"="http://www.avclub.com/",
+        indices=(0,
+                 22),
+        url="http://t.co/vDM9MFGQ66",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=354,
+  "follow_request_sent"=0,
+  "followers_count"=342994,
+  following=1,
+  "friends_count"=419,
+  "geo_enabled"=1,
+  id=16027904,
+  "id_str"=16027904,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=7346,
+  location="U.S.A.",
+  name="The AV Club",
+  notifications=0,
+  "profile_background_color"=FFFFFF,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/663726374/dpimyvcxrw6i5mbpec86.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/663726374/dpimyvcxrw6i5mbpec86.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/16027904/1410538163",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/378800000757427996/541dbf32c44c55996bcaecaf03ad25f0_normal.png",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/378800000757427996/541dbf32c44c55996bcaecaf03ad25f0_normal.png",
+  "profile_link_color"=0000FF,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=E0FF92,
+  "profile_text_color"=000000,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=TheAVClub,
+  "statuses_count"=50102,
+  "time_zone"="Central Time (US & Canada)",
+  url="http://t.co/vDM9MFGQ66",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:33:07 +0000 2014",
+  entities={
+  hashtags=({
+            indices=(10,
+                     20),
+            text=DoctorWho,
+            
+            },
+            {
+            indices=(74,
+                     84),
+            text=Halloween,
+            
+            }),
+  media=({
+         "display_url"="pic.twitter.com/smzU7wyiJI",
+         "expanded_url"="http://twitter.com/ChrisPirillo/status/520643204858003456/photo/1",
+         id=520643204702830592,
+         "id_str"=520643204702830592,
+         indices=(109,
+                  131),
+         "media_url"="http://pbs.twimg.com/media/BzmyPHcIgAAmvJP.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmyPHcIgAAmvJP.jpg",
+         sizes={
+         large={
+         h=960,
+         resize=fit,
+         w=757,
+         
+         },
+         medium={
+         h=760,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=431,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/smzU7wyiJI",
+         
+         }),
+  symbols=(),
+  urls=({
+        "display_url"="ebay.to/1slvjEC",
+        "expanded_url"="http://ebay.to/1slvjEC",
+        indices=(86,
+                 108),
+        url="http://t.co/7PC5SqgII0",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/smzU7wyiJI",
+         "expanded_url"="http://twitter.com/ChrisPirillo/status/520643204858003456/photo/1",
+         id=520643204702830592,
+         "id_str"=520643204702830592,
+         indices=(109,
+                  131),
+         "media_url"="http://pbs.twimg.com/media/BzmyPHcIgAAmvJP.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmyPHcIgAAmvJP.jpg",
+         sizes={
+         large={
+         h=960,
+         resize=fit,
+         w=757,
+         
+         },
+         medium={
+         h=760,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=431,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/smzU7wyiJI",
+         
+         }),
+  
+  },
+  "favorite_count"=3,
+  favorited=0,
+  geo="<null>",
+  id=520643204858003456,
+  "id_str"=520643204858003456,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=2,
+  retweeted=0,
+  source="<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+  text="Are you a #DoctorWho fan? Here's some ideas to help you BE The Doctor for #Halloween: http://t.co/7PC5SqgII0 http://t.co/smzU7wyiJI",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Wed Feb 07 20:01:06 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Geek Culture Lifestyle Cultivator. Nerdtrepreneur? A Vader to @JediPirillo. EVERYWHERE: http://t.co/AoamhyXflo http://t.co/PD8iFB2LvW chris@pirillo.com",
+  entities={
+  description={
+  urls=({
+        "display_url"="ChrisPirillo.com",
+        "expanded_url"="http://ChrisPirillo.com/",
+        indices=(88,
+                 110),
+        url="http://t.co/AoamhyXflo",
+        
+        },
+        {
+        "display_url"="youtube.com/ChrisPirillo",
+        "expanded_url"="http://youtube.com/ChrisPirillo",
+        indices=(111,
+                 133),
+        url="http://t.co/PD8iFB2LvW",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="chris.pirillo.com",
+        "expanded_url"="http://chris.pirillo.com/",
+        indices=(0,
+                 22),
+        url="http://t.co/zDIREljyyo",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=207,
+  "follow_request_sent"=0,
+  "followers_count"=138215,
+  following=1,
+  "friends_count"=2168,
+  "geo_enabled"=0,
+  id=756278,
+  "id_str"=756278,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=9452,
+  location="Seattle, WA",
+  name="Chris Pirillo",
+  notifications=0,
+  "profile_background_color"=FFFFFF,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/161921420/ignoreme.png",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/161921420/ignoreme.png",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/756278/1391558338",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2611249528/h6jnw0fi4him8qfhdxby_normal.png",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2611249528/h6jnw0fi4him8qfhdxby_normal.png",
+  "profile_link_color"=47A6FF,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=EFEFEF,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=0,
+  protected=0,
+  "screen_name"=ChrisPirillo,
+  "statuses_count"=85478,
+  "time_zone"="Pacific Time (US & Canada)",
+  url="http://t.co/zDIREljyyo",
+  "utc_offset"="-25200",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:31:15 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=({
+        "display_url"="p4k.in/1smKsqg",
+        "expanded_url"="http://p4k.in/1smKsqg",
+        indices=(59,
+                 81),
+        url="http://t.co/I4EhV7aykQ",
+        
+        }),
+  "user_mentions"=({
+                   id=14633098,
+                   "id_str"=14633098,
+                   indices=(48,
+                            58),
+                   name="Paul Thompson",
+                   "screen_name"="thom_pson",
+                   
+                   }),
+  
+  },
+  "favorite_count"=2,
+  favorited=0,
+  geo="<null>",
+  id=520642735938621440,
+  "id_str"=520642735938621440,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=1,
+  retweeted=0,
+  source="<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  text="Single Mothers' Negative Qualities, reviewed by @thom_pson http://t.co/I4EhV7aykQ",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu Mar 06 15:34:41 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="The essential guide to independent music and beyond.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="pitchfork.com",
+        "expanded_url"="http://pitchfork.com",
+        indices=(0,
+                 22),
+        url="http://t.co/qq2gaKn1lk",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=54,
+  "follow_request_sent"=0,
+  "followers_count"=2538534,
+  following=1,
+  "friends_count"=2977,
+  "geo_enabled"=1,
+  id=14089195,
+  "id_str"=14089195,
+  "is_translation_enabled"=1,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=31284,
+  location="Chicago/Brooklyn",
+  name=Pitchfork,
+  notifications=0,
+  "profile_background_color"=1F1F1F,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/725162517/a13510d22d37b64ba63513ebb5ac780a.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/725162517/a13510d22d37b64ba63513ebb5ac780a.jpeg",
+  "profile_background_tile"=1,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/14089195/1406061043",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/460905192754397184/foVYUDGD_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/460905192754397184/foVYUDGD_normal.jpeg",
+  "profile_link_color"=EF4035,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=171717,
+  "profile_text_color"=456E87,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=pitchfork,
+  "statuses_count"=36976,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/qq2gaKn1lk",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:30:18 +0000 2014",
+  entities={
+  hashtags=({
+            indices=(30,
+                     52),
+            text=TheEvilWithinFacebook,
+            
+            }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "favorite_count"=4,
+  favorited=0,
+  geo="<null>",
+  id=520642496234524672,
+  "id_str"=520642496234524672,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "retweet_count"=2,
+  retweeted=0,
+  source="<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  text="Get a bonus screenshot on the #TheEvilWithinFacebook page",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Mar 10 20:11:52 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Bethesda Softworks' officially official Twitter for all things Elder Scrolls, Fallout, Dishonored, The Evil Within, Wolfenstein, and more.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bethblog.com",
+        "expanded_url"="http://bethblog.com",
+        indices=(0,
+                 22),
+        url="http://t.co/hDEcAlMpiq",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=1867,
+  "follow_request_sent"=0,
+  "followers_count"=588396,
+  following=1,
+  "friends_count"=316,
+  "geo_enabled"=1,
+  id=23645599,
+  "id_str"=23645599,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=5251,
+  location="Rockville, MD",
+  name="Bethesda Softworks",
+  notifications=0,
+  "profile_background_color"=000000,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/23645599/1405646428",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_link_color"=B40B43,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=252429,
+  "profile_text_color"=666666,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=Bethblog,
+  "statuses_count"=8039,
+  "time_zone"=Quito,
+  url="http://t.co/hDEcAlMpiq",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:30:13 +0000 2014",
+  entities={
+  hashtags=({
+            indices=(10,
+                     18),
+            text=TopGear,
+            
+            }),
+  media=({
+         "display_url"="pic.twitter.com/QKkpBocwlh",
+         "expanded_url"="http://twitter.com/TopGear_BBCA/status/520642474562584576/photo/1",
+         id=520642473849552896,
+         "id_str"=520642473849552896,
+         indices=(118,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmxkkzIgAA60mY.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxkkzIgAA60mY.jpg",
+         sizes={
+         large={
+         h=506,
+         resize=fit,
+         w=898,
+         
+         },
+         medium={
+         h=338,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=191,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/QKkpBocwlh",
+         
+         }),
+  symbols=(),
+  urls=({
+        "display_url"="bbc.in/1EE3cFK",
+        "expanded_url"="http://bbc.in/1EE3cFK",
+        indices=(95,
+                 117),
+        url="http://t.co/4ShHbi0HLX",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/QKkpBocwlh",
+         "expanded_url"="http://twitter.com/TopGear_BBCA/status/520642474562584576/photo/1",
+         id=520642473849552896,
+         "id_str"=520642473849552896,
+         indices=(118,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmxkkzIgAA60mY.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxkkzIgAA60mY.jpg",
+         sizes={
+         large={
+         h=506,
+         resize=fit,
+         w=898,
+         
+         },
+         medium={
+         h=338,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=191,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/QKkpBocwlh",
+         
+         }),
+  
+  },
+  "favorite_count"=7,
+  favorited=0,
+  geo="<null>",
+  id=520642474562584576,
+  "id_str"=520642474562584576,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=3,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Think the #TopGear boys are the only ones who've committed vehicular manslaughter? Think again http://t.co/4ShHbi0HLX http://t.co/QKkpBocwlh",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Mon Jan 12 20:11:24 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Watch #TopGear Mon Nights on @BBCAmerica   \n*Visit* the site http://t.co/6DkHl9FTAy   \n*Follow* us: Facebook http://t.co/1NcE2NbpPw & Tumblr http://t.co/CMNGEzSdeC",
+  entities={
+  description={
+  urls=({
+        "display_url"="bit.ly/TG_BBCA",
+        "expanded_url"="http://bit.ly/TG_BBCA",
+        indices=(60,
+                 82),
+        url="http://t.co/6DkHl9FTAy",
+        
+        },
+        {
+        "display_url"="bit.ly/TGBBCAFB",
+        "expanded_url"="http://bit.ly/TGBBCAFB",
+        indices=(106,
+                 128),
+        url="http://t.co/1NcE2NbpPw",
+        
+        },
+        {
+        "display_url"="bit.ly/1zGe03S",
+        "expanded_url"="http://bit.ly/1zGe03S",
+        indices=(138,
+                 160),
+        url="http://t.co/CMNGEzSdeC",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bit.ly/TG_BBCA",
+        "expanded_url"="http://bit.ly/TG_BBCA",
+        indices=(0,
+                 22),
+        url="http://t.co/6DkHl9FTAy",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=3793,
+  "follow_request_sent"=0,
+  "followers_count"=82106,
+  following=1,
+  "friends_count"=1012,
+  "geo_enabled"=1,
+  id=18913351,
+  "id_str"=18913351,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=1115,
+  location="BBC America",
+  name="Top Gear BBC America",
+  notifications=0,
+  "profile_background_color"=131516,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/449257142902472704/qAMeF48r.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/449257142902472704/qAMeF48r.jpeg",
+  "profile_background_tile"=1,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/18913351/1411574722",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/378800000543407245/cae98dd6f7f3992ed4a6d006e6654396_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/378800000543407245/cae98dd6f7f3992ed4a6d006e6654396_normal.jpeg",
+  "profile_link_color"=009999,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=B08040,
+  "profile_text_color"=000000,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"="TopGear_BBCA",
+  "statuses_count"=3418,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/6DkHl9FTAy",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:29:47 +0000 2014",
+  entities={
+  hashtags=({
+            indices=(19,
+                     33),
+            text=TheEvilWithin,
+            
+            },
+            {
+            indices=(45,
+                     54),
+            text=TEWaDAYS,
+            
+            }),
+  media=({
+         "display_url"="pic.twitter.com/PDaNF0tMXE",
+         "expanded_url"="http://twitter.com/TheEvilWithin/status/520642288830382080/photo/1",
+         id=520642287986958336,
+         "id_str"=520642287986958336,
+         indices=(55,
+                  77),
+         "media_url"="http://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         sizes={
+         large={
+         h=435,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=255,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=144,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520642288830382080,
+         "source_status_id_str"=520642288830382080,
+         type=photo,
+         url="http://t.co/PDaNF0tMXE",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=1110059894,
+                   "id_str"=1110059894,
+                   indices=(3,
+                            17),
+                   name="The Evil Within",
+                   "screen_name"=TheEvilWithin,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/PDaNF0tMXE",
+         "expanded_url"="http://twitter.com/TheEvilWithin/status/520642288830382080/photo/1",
+         id=520642287986958336,
+         "id_str"=520642287986958336,
+         indices=(55,
+                  77),
+         "media_url"="http://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         sizes={
+         large={
+         h=435,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=255,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=144,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520642288830382080,
+         "source_status_id_str"=520642288830382080,
+         type=photo,
+         url="http://t.co/PDaNF0tMXE",
+         
+         },
+         {
+         "display_url"="pic.twitter.com/PDaNF0tMXE",
+         "expanded_url"="http://twitter.com/TheEvilWithin/status/520642288830382080/photo/1",
+         id=520642284291776513,
+         "id_str"=520642284291776513,
+         indices=(55,
+                  77),
+         "media_url"="http://pbs.twimg.com/media/BzmxZipCYAEJTLi.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxZipCYAEJTLi.jpg",
+         sizes={
+         large={
+         h=1365,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520642288830382080,
+         "source_status_id_str"=520642288830382080,
+         type=photo,
+         url="http://t.co/PDaNF0tMXE",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520642363359002624,
+  "id_str"=520642363359002624,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=27,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:29:29 +0000 2014",
+  entities={
+  hashtags=({
+            indices=(0,
+                     14),
+            text=TheEvilWithin,
+            
+            },
+            {
+            indices=(26,
+                     35),
+            text=TEWaDAYS,
+            
+            }),
+  media=({
+         "display_url"="pic.twitter.com/PDaNF0tMXE",
+         "expanded_url"="http://twitter.com/TheEvilWithin/status/520642288830382080/photo/1",
+         id=520642287986958336,
+         "id_str"=520642287986958336,
+         indices=(36,
+                  58),
+         "media_url"="http://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         sizes={
+         large={
+         h=435,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=255,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=144,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/PDaNF0tMXE",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/PDaNF0tMXE",
+         "expanded_url"="http://twitter.com/TheEvilWithin/status/520642288830382080/photo/1",
+         id=520642287986958336,
+         "id_str"=520642287986958336,
+         indices=(36,
+                  58),
+         "media_url"="http://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxZwaCYAAL9LC.jpg",
+         sizes={
+         large={
+         h=435,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=255,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=144,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/PDaNF0tMXE",
+         
+         },
+         {
+         "display_url"="pic.twitter.com/PDaNF0tMXE",
+         "expanded_url"="http://twitter.com/TheEvilWithin/status/520642288830382080/photo/1",
+         id=520642284291776513,
+         "id_str"=520642284291776513,
+         indices=(36,
+                  58),
+         "media_url"="http://pbs.twimg.com/media/BzmxZipCYAEJTLi.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmxZipCYAEJTLi.jpg",
+         sizes={
+         large={
+         h=1365,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/PDaNF0tMXE",
+         
+         }),
+  
+  },
+  "favorite_count"=25,
+  favorited=0,
+  geo="<null>",
+  id=520642288830382080,
+  "id_str"=520642288830382080,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=27,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="#TheEvilWithin Screenshot #TEWaDAYS http://t.co/PDaNF0tMXE",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Mon Jan 21 20:50:12 +0000 2013",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Shinji Mikami, the father of survival horror, is back to direct The Evil Within\U2122 \U2013 a game embodying the meaning of pure survival horror.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="TheEvilWithin.com",
+        "expanded_url"="http://TheEvilWithin.com",
+        indices=(0,
+                 22),
+        url="http://t.co/ggr4qqvivn",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=428,
+  "follow_request_sent"=0,
+  "followers_count"=37429,
+  following=0,
+  "friends_count"=57,
+  "geo_enabled"=1,
+  id=1110059894,
+  "id_str"=1110059894,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=182,
+  location="Tokyo, Japan",
+  name="The Evil Within",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/489953749389963264/ei3lESkj.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/489953749389963264/ei3lESkj.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/1110059894/1405648894",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/462239282573225984/QiHIBibH_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/462239282573225984/QiHIBibH_normal.jpeg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=TheEvilWithin,
+  "statuses_count"=646,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/ggr4qqvivn",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  source="<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  text="RT @TheEvilWithin: #TheEvilWithin Screenshot #TEWaDAYS http://t.co/PDaNF0tMXE",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Mar 10 20:11:52 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Bethesda Softworks' officially official Twitter for all things Elder Scrolls, Fallout, Dishonored, The Evil Within, Wolfenstein, and more.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bethblog.com",
+        "expanded_url"="http://bethblog.com",
+        indices=(0,
+                 22),
+        url="http://t.co/hDEcAlMpiq",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=1867,
+  "follow_request_sent"=0,
+  "followers_count"=588396,
+  following=1,
+  "friends_count"=316,
+  "geo_enabled"=1,
+  id=23645599,
+  "id_str"=23645599,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=5251,
+  location="Rockville, MD",
+  name="Bethesda Softworks",
+  notifications=0,
+  "profile_background_color"=000000,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/23645599/1405646428",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_link_color"=B40B43,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=252429,
+  "profile_text_color"=666666,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=Bethblog,
+  "statuses_count"=8039,
+  "time_zone"=Quito,
+  url="http://t.co/hDEcAlMpiq",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:29:43 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/RlDdPSIDUz",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639483554066432/photo/1",
+         id=520639481913675776,
+         "id_str"=520639481913675776,
+         indices=(91,
+                  113),
+         "media_url"="http://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520639483554066432,
+         "source_status_id_str"=520639483554066432,
+         type=photo,
+         url="http://t.co/RlDdPSIDUz",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=507737759,
+                   "id_str"=507737759,
+                   indices=(3,
+                            15),
+                   name="Bethblog Deutschland",
+                   "screen_name"="bethblog_de",
+                   
+                   },
+                   {
+                   id=1110059894,
+                   "id_str"=1110059894,
+                   indices=(31,
+                            45),
+                   name="The Evil Within",
+                   "screen_name"=TheEvilWithin,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/RlDdPSIDUz",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639483554066432/photo/1",
+         id=520639481913675776,
+         "id_str"=520639481913675776,
+         indices=(91,
+                  113),
+         "media_url"="http://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520639483554066432,
+         "source_status_id_str"=520639483554066432,
+         type=photo,
+         url="http://t.co/RlDdPSIDUz",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520642347156377601,
+  "id_str"=520642347156377601,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=7,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:18:20 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/RlDdPSIDUz",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639483554066432/photo/1",
+         id=520639481913675776,
+         "id_str"=520639481913675776,
+         indices=(74,
+                  96),
+         "media_url"="http://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/RlDdPSIDUz",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=1110059894,
+                   "id_str"=1110059894,
+                   indices=(14,
+                            28),
+                   name="The Evil Within",
+                   "screen_name"=TheEvilWithin,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/RlDdPSIDUz",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639483554066432/photo/1",
+         id=520639481913675776,
+         "id_str"=520639481913675776,
+         indices=(74,
+                  96),
+         "media_url"="http://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/Bzmu2a-CEAA13_-.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/RlDdPSIDUz",
+         
+         }),
+  
+  },
+  "favorite_count"=9,
+  favorited=0,
+  geo="<null>",
+  id=520639483554066432,
+  "id_str"=520639483554066432,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=7,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Live from our @TheEvilWithin Community Event #2 --&gt, Es ist angerichtet http://t.co/RlDdPSIDUz",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Feb 28 18:30:47 +0000 2012",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Offizielle Twitter-Seite von Bethesda Softworks rund um Elder Scrolls, Fallout, RAGE, Dishonored uvm.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bethsoft.com/ger",
+        "expanded_url"="http://www.bethsoft.com/ger",
+        indices=(0,
+                 22),
+        url="http://t.co/30aJajXmCf",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=67,
+  "follow_request_sent"=0,
+  "followers_count"=5089,
+  following=0,
+  "friends_count"=240,
+  "geo_enabled"=0,
+  id=507737759,
+  "id_str"=507737759,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=de,
+  "listed_count"=46,
+  location="Frankfurt am Main",
+  name="Bethblog Deutschland",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/507164312356388864/jBTUbIYa.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/507164312356388864/jBTUbIYa.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/507737759/1409752397",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/1861967515/Square_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/1861967515/Square_normal.jpg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"="bethblog_de",
+  "statuses_count"=869,
+  "time_zone"=Berlin,
+  url="http://t.co/30aJajXmCf",
+  "utc_offset"=7200,
+  verified=0,
+  
+  },
+  
+  },
+  source="<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  text="RT @bethblog_de: Live from our @TheEvilWithin Community Event #2 --&gt, Es ist angerichtet http://t.co/RlDdPSIDUz",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Mar 10 20:11:52 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Bethesda Softworks' officially official Twitter for all things Elder Scrolls, Fallout, Dishonored, The Evil Within, Wolfenstein, and more.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bethblog.com",
+        "expanded_url"="http://bethblog.com",
+        indices=(0,
+                 22),
+        url="http://t.co/hDEcAlMpiq",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=1867,
+  "follow_request_sent"=0,
+  "followers_count"=588396,
+  following=1,
+  "friends_count"=316,
+  "geo_enabled"=1,
+  id=23645599,
+  "id_str"=23645599,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=5251,
+  location="Rockville, MD",
+  name="Bethesda Softworks",
+  notifications=0,
+  "profile_background_color"=000000,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/23645599/1405646428",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_link_color"=B40B43,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=252429,
+  "profile_text_color"=666666,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=Bethblog,
+  "statuses_count"=8039,
+  "time_zone"=Quito,
+  url="http://t.co/hDEcAlMpiq",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:29:33 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/nZj2vOw5aK",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639698184982528/photo/1",
+         id=520639696758521856,
+         "id_str"=520639696758521856,
+         indices=(79,
+                  101),
+         "media_url"="http://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520639698184982528,
+         "source_status_id_str"=520639698184982528,
+         type=photo,
+         url="http://t.co/nZj2vOw5aK",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=507737759,
+                   "id_str"=507737759,
+                   indices=(3,
+                            15),
+                   name="Bethblog Deutschland",
+                   "screen_name"="bethblog_de",
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/nZj2vOw5aK",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639698184982528/photo/1",
+         id=520639696758521856,
+         "id_str"=520639696758521856,
+         indices=(79,
+                  101),
+         "media_url"="http://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520639698184982528,
+         "source_status_id_str"=520639698184982528,
+         type=photo,
+         url="http://t.co/nZj2vOw5aK",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520642305985093632,
+  "id_str"=520642305985093632,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=3,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:19:11 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/nZj2vOw5aK",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639698184982528/photo/1",
+         id=520639696758521856,
+         "id_str"=520639696758521856,
+         indices=(62,
+                  84),
+         "media_url"="http://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/nZj2vOw5aK",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/nZj2vOw5aK",
+         "expanded_url"="http://twitter.com/bethblog_de/status/520639698184982528/photo/1",
+         id=520639696758521856,
+         "id_str"=520639696758521856,
+         indices=(62,
+                  84),
+         "media_url"="http://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmvC7VCQAAEo9R.jpg",
+         sizes={
+         large={
+         h=678,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=397,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=225,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/nZj2vOw5aK",
+         
+         }),
+  
+  },
+  "favorite_count"=4,
+  favorited=0,
+  geo="<null>",
+  id=520639698184982528,
+  "id_str"=520639698184982528,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=3,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Live from our @TheEvilWith Community Event #3 --&gt, HandsOn! http://t.co/nZj2vOw5aK",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Feb 28 18:30:47 +0000 2012",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Offizielle Twitter-Seite von Bethesda Softworks rund um Elder Scrolls, Fallout, RAGE, Dishonored uvm.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bethsoft.com/ger",
+        "expanded_url"="http://www.bethsoft.com/ger",
+        indices=(0,
+                 22),
+        url="http://t.co/30aJajXmCf",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=67,
+  "follow_request_sent"=0,
+  "followers_count"=5089,
+  following=0,
+  "friends_count"=240,
+  "geo_enabled"=0,
+  id=507737759,
+  "id_str"=507737759,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=de,
+  "listed_count"=46,
+  location="Frankfurt am Main",
+  name="Bethblog Deutschland",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/507164312356388864/jBTUbIYa.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/507164312356388864/jBTUbIYa.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/507737759/1409752397",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/1861967515/Square_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/1861967515/Square_normal.jpg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"="bethblog_de",
+  "statuses_count"=869,
+  "time_zone"=Berlin,
+  url="http://t.co/30aJajXmCf",
+  "utc_offset"=7200,
+  verified=0,
+  
+  },
+  
+  },
+  source="<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  text="RT @bethblog_de: Live from our @TheEvilWith Community Event #3 --&gt, HandsOn! http://t.co/nZj2vOw5aK",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Mar 10 20:11:52 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Bethesda Softworks' officially official Twitter for all things Elder Scrolls, Fallout, Dishonored, The Evil Within, Wolfenstein, and more.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="bethblog.com",
+        "expanded_url"="http://bethblog.com",
+        indices=(0,
+                 22),
+        url="http://t.co/hDEcAlMpiq",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=1867,
+  "follow_request_sent"=0,
+  "followers_count"=588396,
+  following=1,
+  "friends_count"=316,
+  "geo_enabled"=1,
+  id=23645599,
+  "id_str"=23645599,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=5251,
+  location="Rockville, MD",
+  name="Bethesda Softworks",
+  notifications=0,
+  "profile_background_color"=000000,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/489942900147355648/NoEj03bI.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/23645599/1405646428",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2145212724/square_normal.jpg",
+  "profile_link_color"=B40B43,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=252429,
+  "profile_text_color"=666666,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=Bethblog,
+  "statuses_count"=8039,
+  "time_zone"=Quito,
+  url="http://t.co/hDEcAlMpiq",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:29:18 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/2DVOeT9OoS",
+         "expanded_url"="http://twitter.com/svdate/status/520641060805296128/photo/1",
+         id=520641060087664640,
+         "id_str"=520641060087664640,
+         indices=(139,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         sizes={
+         large={
+         h=366,
+         resize=fit,
+         w=895,
+         
+         },
+         medium={
+         h=245,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=139,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520641060805296128,
+         "source_status_id_str"=520641060805296128,
+         type=photo,
+         url="http://t.co/2DVOeT9OoS",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=807975026,
+                   "id_str"=807975026,
+                   indices=(3,
+                            10),
+                   name="S.V. D\U00e1te ",
+                   "screen_name"=svdate,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/2DVOeT9OoS",
+         "expanded_url"="http://twitter.com/svdate/status/520641060805296128/photo/1",
+         id=520641060087664640,
+         "id_str"=520641060087664640,
+         indices=(139,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         sizes={
+         large={
+         h=366,
+         resize=fit,
+         w=895,
+         
+         },
+         medium={
+         h=245,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=139,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520641060805296128,
+         "source_status_id_str"=520641060805296128,
+         type=photo,
+         url="http://t.co/2DVOeT9OoS",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520642242017771521,
+  "id_str"=520642242017771521,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=6,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:24:36 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/2DVOeT9OoS",
+         "expanded_url"="http://twitter.com/svdate/status/520641060805296128/photo/1",
+         id=520641060087664640,
+         "id_str"=520641060087664640,
+         indices=(118,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         sizes={
+         large={
+         h=366,
+         resize=fit,
+         w=895,
+         
+         },
+         medium={
+         h=245,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=139,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/2DVOeT9OoS",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/2DVOeT9OoS",
+         "expanded_url"="http://twitter.com/svdate/status/520641060805296128/photo/1",
+         id=520641060087664640,
+         "id_str"=520641060087664640,
+         indices=(118,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmwSSICEAA1RDA.png",
+         sizes={
+         large={
+         h=366,
+         resize=fit,
+         w=895,
+         
+         },
+         medium={
+         h=245,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=139,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/2DVOeT9OoS",
+         
+         }),
+  
+  },
+  "favorite_count"=3,
+  favorited=0,
+  geo="<null>",
+  id=520641060805296128,
+  "id_str"=520641060805296128,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=6,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Clinton papers. Lewinsky memo argues no legal grounds for impeachment. Infidelity not \"high crimes and misdemeanors.\" http://t.co/2DVOeT9OoS",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Fri Sep 07 01:50:06 +0000 2012",
+  "default_profile"=1,
+  "default_profile_image"=0,
+  description="",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  
+  },
+  "favourites_count"=24,
+  "follow_request_sent"=0,
+  "followers_count"=359,
+  following=0,
+  "friends_count"=247,
+  "geo_enabled"=0,
+  id=807975026,
+  "id_str"=807975026,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=15,
+  location="NPR Washington Desk",
+  name="S.V. D\U00e1te ",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_image_url_https"="https://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/807975026/1401675065",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/473286165928239104/6JNvLJLr_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/473286165928239104/6JNvLJLr_normal.jpeg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=C0DEED,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=svdate,
+  "statuses_count"=531,
+  "time_zone"="<null>",
+  url="<null>",
+  "utc_offset"="<null>",
+  verified=0,
+  
+  },
+  
+  },
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="RT @svdate: Clinton papers. Lewinsky memo argues no legal grounds for impeachment. Infidelity not \"high crimes and misdemeanors.\" http://t.\U2026",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu May 03 14:45:05 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Political coverage and conversation from @NPRnews",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="npr.org/sections/polit\U2026",
+        "expanded_url"="http://www.npr.org/sections/politics/",
+        indices=(0,
+                 22),
+        url="http://t.co/eDcomsQk0c",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=32,
+  "follow_request_sent"=0,
+  "followers_count"=1869104,
+  following=1,
+  "friends_count"=104481,
+  "geo_enabled"=0,
+  id=5741722,
+  "id_str"=5741722,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=25890,
+  location="Washington, DC",
+  name="NPR Politics",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/2402295/logo_npr_125.gif",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/2402295/logo_npr_125.gif",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/5741722/1409769179",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/989255441/twitter_politics_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/989255441/twitter_politics_normal.jpg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=C0DEED,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=nprpolitics,
+  "statuses_count"=27905,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/eDcomsQk0c",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:24:02 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=({
+        "display_url"="avc.lu/111v2ML",
+        "expanded_url"="http://avc.lu/111v2ML",
+        indices=(68,
+                 90),
+        url="http://t.co/ELpo260GlE",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "favorite_count"=3,
+  favorited=0,
+  geo="<null>",
+  id=520640917691457537,
+  "id_str"=520640917691457537,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=3,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="The Lawrence Arms made a whistled hook the best part of a punk song http://t.co/ELpo260GlE",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu Aug 28 15:07:34 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Pop culture obsessives writing for the pop culture obsessed. Also https://t.co/Khsgc1BDIX",
+  entities={
+  description={
+  urls=({
+        "display_url"="facebook.com/theavclub",
+        "expanded_url"="https://www.facebook.com/theavclub",
+        indices=(66,
+                 89),
+        url="https://t.co/Khsgc1BDIX",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="avclub.com",
+        "expanded_url"="http://www.avclub.com/",
+        indices=(0,
+                 22),
+        url="http://t.co/vDM9MFGQ66",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=354,
+  "follow_request_sent"=0,
+  "followers_count"=342994,
+  following=1,
+  "friends_count"=419,
+  "geo_enabled"=1,
+  id=16027904,
+  "id_str"=16027904,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=7346,
+  location="U.S.A.",
+  name="The AV Club",
+  notifications=0,
+  "profile_background_color"=FFFFFF,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/663726374/dpimyvcxrw6i5mbpec86.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/663726374/dpimyvcxrw6i5mbpec86.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/16027904/1410538163",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/378800000757427996/541dbf32c44c55996bcaecaf03ad25f0_normal.png",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/378800000757427996/541dbf32c44c55996bcaecaf03ad25f0_normal.png",
+  "profile_link_color"=0000FF,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=E0FF92,
+  "profile_text_color"=000000,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=TheAVClub,
+  "statuses_count"=50102,
+  "time_zone"="Central Time (US & Canada)",
+  url="http://t.co/vDM9MFGQ66",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:23:24 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/jCbGmxStNG",
+         "expanded_url"="http://twitter.com/lumbracg/status/520627257694773248/photo/1",
+         id=520627256473821185,
+         "id_str"=520627256473821185,
+         indices=(28,
+                  50),
+         "media_url"="http://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520627257694773248,
+         "source_status_id_str"=520627257694773248,
+         type=photo,
+         url="http://t.co/jCbGmxStNG",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=214124972,
+                   "id_str"=214124972,
+                   indices=(3,
+                            12),
+                   name=Casey,
+                   "screen_name"=lumbracg,
+                   
+                   },
+                   {
+                   id=756278,
+                   "id_str"=756278,
+                   indices=(14,
+                            27),
+                   name="Chris Pirillo",
+                   "screen_name"=ChrisPirillo,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/jCbGmxStNG",
+         "expanded_url"="http://twitter.com/lumbracg/status/520627257694773248/photo/1",
+         id=520627256473821185,
+         "id_str"=520627256473821185,
+         indices=(28,
+                  50),
+         "media_url"="http://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520627257694773248,
+         "source_status_id_str"=520627257694773248,
+         type=photo,
+         url="http://t.co/jCbGmxStNG",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520640759129993216,
+  "id_str"=520640759129993216,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=und,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=1,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 17:29:45 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/jCbGmxStNG",
+         "expanded_url"="http://twitter.com/lumbracg/status/520627257694773248/photo/1",
+         id=520627256473821185,
+         "id_str"=520627256473821185,
+         indices=(14,
+                  36),
+         "media_url"="http://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/jCbGmxStNG",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=756278,
+                   "id_str"=756278,
+                   indices=(0,
+                            13),
+                   name="Chris Pirillo",
+                   "screen_name"=ChrisPirillo,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/jCbGmxStNG",
+         "expanded_url"="http://twitter.com/lumbracg/status/520627257694773248/photo/1",
+         id=520627256473821185,
+         "id_str"=520627256473821185,
+         indices=(14,
+                  36),
+         "media_url"="http://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmjuzqCIAE10t2.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/jCbGmxStNG",
+         
+         }),
+  
+  },
+  "favorite_count"=2,
+  favorited=0,
+  geo="<null>",
+  id=520627257694773248,
+  "id_str"=520627257694773248,
+  "in_reply_to_screen_name"=ChrisPirillo,
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"=756278,
+  "in_reply_to_user_id_str"=756278,
+  lang=und,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=1,
+  retweeted=0,
+  source="<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  text="@ChrisPirillo http://t.co/jCbGmxStNG",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Wed Nov 10 16:41:55 +0000 2010",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Graphic/web designer, Creative Director of Gearadelphis, firefighter, flyers fan and beer brewer.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  
+  },
+  "favourites_count"=66,
+  "follow_request_sent"=0,
+  "followers_count"=152,
+  following=0,
+  "friends_count"=358,
+  "geo_enabled"=0,
+  id=214124972,
+  "id_str"=214124972,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=9,
+  location="Hudson Falls, NY",
+  name=Casey,
+  notifications=0,
+  "profile_background_color"=C6E2EE,
+  "profile_background_image_url"="http://abs.twimg.com/images/themes/theme2/bg.gif",
+  "profile_background_image_url_https"="https://abs.twimg.com/images/themes/theme2/bg.gif",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/214124972/1412607725",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/519140110621614080/BI-OWEDZ_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/519140110621614080/BI-OWEDZ_normal.jpeg",
+  "profile_link_color"=1F98C7,
+  "profile_sidebar_border_color"=C6E2EE,
+  "profile_sidebar_fill_color"=DAECF4,
+  "profile_text_color"=663B12,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=lumbracg,
+  "statuses_count"=4141,
+  "time_zone"="Central Time (US & Canada)",
+  url="<null>",
+  "utc_offset"="-18000",
+  verified=0,
+  
+  },
+  
+  },
+  source="<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>",
+  text="RT @lumbracg: @ChrisPirillo http://t.co/jCbGmxStNG",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Wed Feb 07 20:01:06 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Geek Culture Lifestyle Cultivator. Nerdtrepreneur? A Vader to @JediPirillo. EVERYWHERE: http://t.co/AoamhyXflo http://t.co/PD8iFB2LvW chris@pirillo.com",
+  entities={
+  description={
+  urls=({
+        "display_url"="ChrisPirillo.com",
+        "expanded_url"="http://ChrisPirillo.com/",
+        indices=(88,
+                 110),
+        url="http://t.co/AoamhyXflo",
+        
+        },
+        {
+        "display_url"="youtube.com/ChrisPirillo",
+        "expanded_url"="http://youtube.com/ChrisPirillo",
+        indices=(111,
+                 133),
+        url="http://t.co/PD8iFB2LvW",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="chris.pirillo.com",
+        "expanded_url"="http://chris.pirillo.com/",
+        indices=(0,
+                 22),
+        url="http://t.co/zDIREljyyo",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=207,
+  "follow_request_sent"=0,
+  "followers_count"=138215,
+  following=1,
+  "friends_count"=2168,
+  "geo_enabled"=0,
+  id=756278,
+  "id_str"=756278,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=9452,
+  location="Seattle, WA",
+  name="Chris Pirillo",
+  notifications=0,
+  "profile_background_color"=FFFFFF,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/161921420/ignoreme.png",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/161921420/ignoreme.png",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/756278/1391558338",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2611249528/h6jnw0fi4him8qfhdxby_normal.png",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2611249528/h6jnw0fi4him8qfhdxby_normal.png",
+  "profile_link_color"=47A6FF,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=EFEFEF,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=0,
+  protected=0,
+  "screen_name"=ChrisPirillo,
+  "statuses_count"=85478,
+  "time_zone"="Pacific Time (US & Canada)",
+  url="http://t.co/zDIREljyyo",
+  "utc_offset"="-25200",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:22:16 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/LYjUFWvU9J",
+         "expanded_url"="http://twitter.com/svdate/status/520636986848444417/photo/1",
+         id=520636986034368513,
+         "id_str"=520636986034368513,
+         indices=(139,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         sizes={
+         large={
+         h=557,
+         resize=fit,
+         w=763,
+         
+         },
+         medium={
+         h=438,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=248,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520636986848444417,
+         "source_status_id_str"=520636986848444417,
+         type=photo,
+         url="http://t.co/LYjUFWvU9J",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=807975026,
+                   "id_str"=807975026,
+                   indices=(3,
+                            10),
+                   name="S.V. D\U00e1te ",
+                   "screen_name"=svdate,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/LYjUFWvU9J",
+         "expanded_url"="http://twitter.com/svdate/status/520636986848444417/photo/1",
+         id=520636986034368513,
+         "id_str"=520636986034368513,
+         indices=(139,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         sizes={
+         large={
+         h=557,
+         resize=fit,
+         w=763,
+         
+         },
+         medium={
+         h=438,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=248,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520636986848444417,
+         "source_status_id_str"=520636986848444417,
+         type=photo,
+         url="http://t.co/LYjUFWvU9J",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520640474420629506,
+  "id_str"=520640474420629506,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=3,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:08:25 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/LYjUFWvU9J",
+         "expanded_url"="http://twitter.com/svdate/status/520636986848444417/photo/1",
+         id=520636986034368513,
+         "id_str"=520636986034368513,
+         indices=(118,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         sizes={
+         large={
+         h=557,
+         resize=fit,
+         w=763,
+         
+         },
+         medium={
+         h=438,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=248,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/LYjUFWvU9J",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/LYjUFWvU9J",
+         "expanded_url"="http://twitter.com/svdate/status/520636986848444417/photo/1",
+         id=520636986034368513,
+         "id_str"=520636986034368513,
+         indices=(118,
+                  140),
+         "media_url"="http://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         "media_url_https"="https://pbs.twimg.com/media/BzmslJGCMAEhdPB.png",
+         sizes={
+         large={
+         h=557,
+         resize=fit,
+         w=763,
+         
+         },
+         medium={
+         h=438,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=248,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/LYjUFWvU9J",
+         
+         }),
+  
+  },
+  "favorite_count"=4,
+  favorited=0,
+  geo="<null>",
+  id=520636986848444417,
+  "id_str"=520636986848444417,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=3,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Clinton papers. Sidney Blumenthal working to discredit Lucianne Goldberg on Lewinsky story. Offering up Kitty Kelley. http://t.co/LYjUFWvU9J",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Fri Sep 07 01:50:06 +0000 2012",
+  "default_profile"=1,
+  "default_profile_image"=0,
+  description="",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  
+  },
+  "favourites_count"=24,
+  "follow_request_sent"=0,
+  "followers_count"=359,
+  following=0,
+  "friends_count"=247,
+  "geo_enabled"=0,
+  id=807975026,
+  "id_str"=807975026,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=15,
+  location="NPR Washington Desk",
+  name="S.V. D\U00e1te ",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_image_url_https"="https://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/807975026/1401675065",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/473286165928239104/6JNvLJLr_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/473286165928239104/6JNvLJLr_normal.jpeg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=C0DEED,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=svdate,
+  "statuses_count"=531,
+  "time_zone"="<null>",
+  url="<null>",
+  "utc_offset"="<null>",
+  verified=0,
+  
+  },
+  
+  },
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="RT @svdate: Clinton papers. Sidney Blumenthal working to discredit Lucianne Goldberg on Lewinsky story. Offering up Kitty Kelley. http://t.\U2026",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu May 03 14:45:05 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Political coverage and conversation from @NPRnews",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="npr.org/sections/polit\U2026",
+        "expanded_url"="http://www.npr.org/sections/politics/",
+        indices=(0,
+                 22),
+        url="http://t.co/eDcomsQk0c",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=32,
+  "follow_request_sent"=0,
+  "followers_count"=1869104,
+  following=1,
+  "friends_count"=104481,
+  "geo_enabled"=0,
+  id=5741722,
+  "id_str"=5741722,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=25890,
+  location="Washington, DC",
+  name="NPR Politics",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/2402295/logo_npr_125.gif",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/2402295/logo_npr_125.gif",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/5741722/1409769179",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/989255441/twitter_politics_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/989255441/twitter_politics_normal.jpg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=C0DEED,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=nprpolitics,
+  "statuses_count"=27905,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/eDcomsQk0c",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:22:12 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/tCQ4oLmcMm",
+         "expanded_url"="http://twitter.com/MythBusters/status/520640455814705152/photo/1",
+         id=520640455290417152,
+         "id_str"=520640455290417152,
+         indices=(74,
+                  96),
+         "media_url"="http://pbs.twimg.com/media/BzmvvFFIcAAj_49.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmvvFFIcAAj_49.jpg",
+         sizes={
+         large={
+         h=447,
+         resize=fit,
+         w=622,
+         
+         },
+         medium={
+         h=431,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=244,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/tCQ4oLmcMm",
+         
+         }),
+  symbols=(),
+  urls=({
+        "display_url"="dsc.tv/CzTxg",
+        "expanded_url"="http://dsc.tv/CzTxg",
+        indices=(51,
+                 73),
+        url="http://t.co/u5oXLbG5cj",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/tCQ4oLmcMm",
+         "expanded_url"="http://twitter.com/MythBusters/status/520640455814705152/photo/1",
+         id=520640455290417152,
+         "id_str"=520640455290417152,
+         indices=(74,
+                  96),
+         "media_url"="http://pbs.twimg.com/media/BzmvvFFIcAAj_49.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmvvFFIcAAj_49.jpg",
+         sizes={
+         large={
+         h=447,
+         resize=fit,
+         w=622,
+         
+         },
+         medium={
+         h=431,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=244,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/tCQ4oLmcMm",
+         
+         }),
+  
+  },
+  "favorite_count"=53,
+  favorited=0,
+  geo="<null>",
+  id=520640455814705152,
+  "id_str"=520640455814705152,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=23,
+  retweeted=0,
+  source="<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+  text="Can droids be cloned? CONFIRMED. Get more &gt,&gt, http://t.co/u5oXLbG5cj http://t.co/tCQ4oLmcMm",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Mon Jun 29 18:46:37 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="The only difference between science and screwing around is tweeting it out! Official account for #MythBusters on @Discovery.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="discovery.com/mythbusters",
+        "expanded_url"="http://discovery.com/mythbusters",
+        indices=(0,
+                 22),
+        url="http://t.co/6G59ehnU55",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=1011,
+  "follow_request_sent"=0,
+  "followers_count"=1585286,
+  following=1,
+  "friends_count"=17121,
+  "geo_enabled"=0,
+  id=52146755,
+  "id_str"=52146755,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=14400,
+  location="San Francisco, CA",
+  name=MythBusters,
+  notifications=0,
+  "profile_background_color"=131516,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/444154101362724864/XfHnm5uX.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/444154101362724864/XfHnm5uX.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/52146755/1409682247",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/484442475856015360/0krOgc63_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/484442475856015360/0krOgc63_normal.jpeg",
+  "profile_link_color"=76614E,
+  "profile_sidebar_border_color"=000000,
+  "profile_sidebar_fill_color"=EFEFEF,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=MythBusters,
+  "statuses_count"=9189,
+  "time_zone"="Pacific Time (US & Canada)",
+  url="http://t.co/6G59ehnU55",
+  "utc_offset"="-25200",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:17:20 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/f73zGHhuGV",
+         "expanded_url"="http://twitter.com/TheOnion/status/520639229869953025/photo/1",
+         id=520639229118803968,
+         "id_str"=520639229118803968,
+         indices=(107,
+                  129),
+         "media_url"="http://pbs.twimg.com/media/BzmuntPCcAAvhO_.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmuntPCcAAvhO_.jpg",
+         sizes={
+         large={
+         h=580,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=339,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=192,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/f73zGHhuGV",
+         
+         }),
+  symbols=(),
+  urls=({
+        "display_url"="onion.com/1q8X9zn",
+        "expanded_url"="http://onion.com/1q8X9zn",
+        indices=(84,
+                 106),
+        url="http://t.co/OHSKDaGRo8",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/f73zGHhuGV",
+         "expanded_url"="http://twitter.com/TheOnion/status/520639229869953025/photo/1",
+         id=520639229118803968,
+         "id_str"=520639229118803968,
+         indices=(107,
+                  129),
+         "media_url"="http://pbs.twimg.com/media/BzmuntPCcAAvhO_.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmuntPCcAAvhO_.jpg",
+         sizes={
+         large={
+         h=580,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=339,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=192,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/f73zGHhuGV",
+         
+         }),
+  
+  },
+  "favorite_count"=173,
+  favorited=0,
+  geo="<null>",
+  id=520639229869953025,
+  "id_str"=520639229869953025,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=208,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Kim Jong-Un\U2019s Absence Leaves North Korean Government Officials No One To Agree With http://t.co/OHSKDaGRo8 http://t.co/f73zGHhuGV",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Mar 04 02:48:37 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="America's Finest News Source. Subscribe on YouTube: http://t.co/5h833w1KO1",
+  entities={
+  description={
+  urls=({
+        "display_url"="bitly.com/xzrBUA",
+        "expanded_url"="http://bitly.com/xzrBUA",
+        indices=(52,
+                 74),
+        url="http://t.co/5h833w1KO1",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="theonion.com",
+        "expanded_url"="http://www.theonion.com",
+        indices=(0,
+                 22),
+        url="http://t.co/Abkc9I2inH",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=1,
+  "follow_request_sent"=0,
+  "followers_count"=6339071,
+  following=1,
+  "friends_count"=13,
+  "geo_enabled"=0,
+  id=14075928,
+  "id_str"=14075928,
+  "is_translation_enabled"=1,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=72288,
+  location="",
+  name="The Onion",
+  notifications=0,
+  "profile_background_color"=FFFFFF,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/183829455/onion_twitter.png",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/183829455/onion_twitter.png",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/14075928/1398268996",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/3654358881/476bd54bd9c2bc0f9a38b4e097ce6af5_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/3654358881/476bd54bd9c2bc0f9a38b4e097ce6af5_normal.jpeg",
+  "profile_link_color"=FF0000,
+  "profile_sidebar_border_color"=F2E195,
+  "profile_sidebar_fill_color"=FFF7CC,
+  "profile_text_color"=0C3E53,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=TheOnion,
+  "statuses_count"=31881,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/Abkc9I2inH",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:13:35 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=({
+        "display_url"="n.pr/1EE0e4f",
+        "expanded_url"="http://n.pr/1EE0e4f",
+        indices=(77,
+                 99),
+        url="http://t.co/OgfQNfl7JL",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "favorite_count"=1,
+  favorited=0,
+  geo="<null>",
+  id=520638289506619392,
+  "id_str"=520638289506619392,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=2,
+  retweeted=0,
+  source="<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+  text="Oregon First Lady Sorry For 'Marriage Of Convenience' With Green Card Seeker http://t.co/OgfQNfl7JL",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu May 03 14:45:05 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Political coverage and conversation from @NPRnews",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="npr.org/sections/polit\U2026",
+        "expanded_url"="http://www.npr.org/sections/politics/",
+        indices=(0,
+                 22),
+        url="http://t.co/eDcomsQk0c",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=32,
+  "follow_request_sent"=0,
+  "followers_count"=1869104,
+  following=1,
+  "friends_count"=104481,
+  "geo_enabled"=0,
+  id=5741722,
+  "id_str"=5741722,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=25890,
+  location="Washington, DC",
+  name="NPR Politics",
+  notifications=0,
+  "profile_background_color"=C0DEED,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/2402295/logo_npr_125.gif",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/2402295/logo_npr_125.gif",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/5741722/1409769179",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/989255441/twitter_politics_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/989255441/twitter_politics_normal.jpg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=C0DEED,
+  "profile_sidebar_fill_color"=DDEEF6,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=nprpolitics,
+  "statuses_count"=27905,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="http://t.co/eDcomsQk0c",
+  "utc_offset"="-14400",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:11:31 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=770759,
+                   "id_str"=770759,
+                   indices=(3,
+                            18),
+                   name="Gary Arndt",
+                   "screen_name"=EverywhereTrip,
+                   
+                   }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520637767806504960,
+  "id_str"=520637767806504960,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "retweet_count"=20,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 17:58:26 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "favorite_count"=23,
+  favorited=0,
+  geo="<null>",
+  id=520634474368090112,
+  "id_str"=520634474368090112,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "retweet_count"=20,
+  retweeted=0,
+  source="<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  text="When a 17 year old wins a Nobel Prize, it sort of makes you feel like a slacker.",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Feb 13 23:25:37 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="SATW & NATJA Travel Photographer of the Year.  I've been to over 105 countries and all 7 continents since 2007. A @gAdventures Wanderer in Residence.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="Everything-Everywhere.com/about/",
+        "expanded_url"="http://Everything-Everywhere.com/about/",
+        indices=(0,
+                 22),
+        url="http://t.co/VVgkam7sV1",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=275,
+  "follow_request_sent"=0,
+  "followers_count"=131501,
+  following=0,
+  "friends_count"=489,
+  "geo_enabled"=1,
+  id=770759,
+  "id_str"=770759,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=5795,
+  location=Nomadic,
+  name="Gary Arndt",
+  notifications=0,
+  "profile_background_color"=9AB983,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/664395601/5cb6fd7ce30d0f78e2908cbf55deae7d.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/664395601/5cb6fd7ce30d0f78e2908cbf55deae7d.jpeg",
+  "profile_background_tile"=1,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/770759/1399702790",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/3765293576/3878976f83df438c4d345654aea0ae6d_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/3765293576/3878976f83df438c4d345654aea0ae6d_normal.jpeg",
+  "profile_link_color"=BA8B45,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=EBAD02,
+  "profile_text_color"=000000,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=EverywhereTrip,
+  "statuses_count"=52102,
+  "time_zone"="Central Time (US & Canada)",
+  url="http://t.co/VVgkam7sV1",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  source="<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>",
+  text="RT @EverywhereTrip: When a 17 year old wins a Nobel Prize, it sort of makes you feel like a slacker.",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Tue Feb 06 21:09:33 +0000 2007",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Draw every day",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="pvponline.com",
+        "expanded_url"="http://www.pvponline.com",
+        indices=(0,
+                 22),
+        url="http://t.co/5uimfspS4g",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=254,
+  "follow_request_sent"=0,
+  "followers_count"=48190,
+  following=1,
+  "friends_count"=98,
+  "geo_enabled"=0,
+  id=755431,
+  "id_str"=755431,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=2969,
+  location="Seattle, Wa",
+  name="Scott Kurtz",
+  notifications=0,
+  "profile_background_color"=99B0A6,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/29865707/twitterpvp.jpg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/29865707/twitterpvp.jpg",
+  "profile_background_tile"=0,
+  "profile_image_url"="http://pbs.twimg.com/profile_images/2404666616/p9bktyz0j5b92diy4lht_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/2404666616/p9bktyz0j5b92diy4lht_normal.jpeg",
+  "profile_link_color"=0084B4,
+  "profile_sidebar_border_color"=BDDCAD,
+  "profile_sidebar_fill_color"=ABBAA3,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=pvponline,
+  "statuses_count"=28611,
+  "time_zone"="Central Time (US & Canada)",
+  url="http://t.co/5uimfspS4g",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:11:22 +0000 2014",
+  entities={
+  hashtags=(),
+  symbols=(),
+  urls=({
+        "display_url"="avc.lu/1sndBSh",
+        "expanded_url"="http://avc.lu/1sndBSh",
+        indices=(69,
+                 91),
+        url="http://t.co/jUgjkY6xh1",
+        
+        }),
+  "user_mentions"=({
+                   id=28221296,
+                   "id_str"=28221296,
+                   indices=(48,
+                            55),
+                   name="Saturday Night Live",
+                   "screen_name"=nbcsnl,
+                   
+                   }),
+  
+  },
+  "favorite_count"=11,
+  favorited=0,
+  geo="<null>",
+  id=520637729642921984,
+  "id_str"=520637729642921984,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=4,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="Yes, Stefon will probably make an appearance on @NBCSNL this weekend http://t.co/jUgjkY6xh1",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Thu Aug 28 15:07:34 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Pop culture obsessives writing for the pop culture obsessed. Also https://t.co/Khsgc1BDIX",
+  entities={
+  description={
+  urls=({
+        "display_url"="facebook.com/theavclub",
+        "expanded_url"="https://www.facebook.com/theavclub",
+        indices=(66,
+                 89),
+        url="https://t.co/Khsgc1BDIX",
+        
+        }),
+  
+  },
+  url={
+  urls=({
+        "display_url"="avclub.com",
+        "expanded_url"="http://www.avclub.com/",
+        indices=(0,
+                 22),
+        url="http://t.co/vDM9MFGQ66",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=354,
+  "follow_request_sent"=0,
+  "followers_count"=342994,
+  following=1,
+  "friends_count"=419,
+  "geo_enabled"=1,
+  id=16027904,
+  "id_str"=16027904,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=7346,
+  location="U.S.A.",
+  name="The AV Club",
+  notifications=0,
+  "profile_background_color"=FFFFFF,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/663726374/dpimyvcxrw6i5mbpec86.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/663726374/dpimyvcxrw6i5mbpec86.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/16027904/1410538163",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/378800000757427996/541dbf32c44c55996bcaecaf03ad25f0_normal.png",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/378800000757427996/541dbf32c44c55996bcaecaf03ad25f0_normal.png",
+  "profile_link_color"=0000FF,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=E0FF92,
+  "profile_text_color"=000000,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=TheAVClub,
+  "statuses_count"=50102,
+  "time_zone"="Central Time (US & Canada)",
+  url="http://t.co/vDM9MFGQ66",
+  "utc_offset"="-18000",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:06:55 +0000 2014",
+  entities={
+  hashtags=({
+            indices=(33,
+                     47),
+            text=SpaceJanitors,
+            
+            }),
+  symbols=(),
+  urls=({
+        "display_url"="ow.ly/CzQ2r",
+        "expanded_url"="http://ow.ly/CzQ2r",
+        indices=(109,
+                 131),
+        url="http://t.co/AjhHkDScfe",
+        
+        }),
+  "user_mentions"=(),
+  
+  },
+  "favorite_count"=5,
+  favorited=0,
+  geo="<null>",
+  id=520636612079013888,
+  "id_str"=520636612079013888,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=1,
+  retweeted=0,
+  source="<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+  text="What's better than the return of #SpaceJanitors? Extra stuff! Go check out some BTS action at their channel: http://t.co/AjhHkDScfe",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Fri Aug 26 04:23:17 +0000 2011",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="Bringing you the best of geek culture. Felicia Day, Wil Wheaton, Day9, and many more cover board gaming, video gaming, books, tabletop, sci-fi & etc!\U00a0",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="geekandsundry.com",
+        "expanded_url"="http://geekandsundry.com",
+        indices=(0,
+                 22),
+        url="http://t.co/OFbm3GVcdw",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=11964,
+  "follow_request_sent"=0,
+  "followers_count"=117885,
+  following=1,
+  "friends_count"=546,
+  "geo_enabled"=1,
+  id=362286999,
+  "id_str"=362286999,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=2556,
+  location="Los Angeles",
+  name="Geek & Sundry",
+  notifications=0,
+  "profile_background_color"=4A7B7F,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/414503198/gs-pattern-tile.jpg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/414503198/gs-pattern-tile.jpg",
+  "profile_background_tile"=1,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/362286999/1412631742",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/1797302380/gs-logo-green-500x500_normal.jpg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/1797302380/gs-logo-green-500x500_normal.jpg",
+  "profile_link_color"=058AAB,
+  "profile_sidebar_border_color"=FFFFFF,
+  "profile_sidebar_fill_color"=61EB2A,
+  "profile_text_color"=2B2725,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=GeekandSundry,
+  "statuses_count"=14903,
+  "time_zone"="<null>",
+  url="http://t.co/OFbm3GVcdw",
+  "utc_offset"="<null>",
+  verified=0,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:06:09 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/GLELjJ0QoM",
+         "expanded_url"="http://twitter.com/donttrythis/status/520636416045248512/photo/1",
+         id=520636415055392768,
+         "id_str"=520636415055392768,
+         indices=(29,
+                  51),
+         "media_url"="http://pbs.twimg.com/media/BzmsD6CCcAA_oYn.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmsD6CCcAA_oYn.jpg",
+         sizes={
+         large={
+         h=768,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=450,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=255,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/GLELjJ0QoM",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=(),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/GLELjJ0QoM",
+         "expanded_url"="http://twitter.com/donttrythis/status/520636416045248512/photo/1",
+         id=520636415055392768,
+         "id_str"=520636415055392768,
+         indices=(29,
+                  51),
+         "media_url"="http://pbs.twimg.com/media/BzmsD6CCcAA_oYn.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmsD6CCcAA_oYn.jpg",
+         sizes={
+         large={
+         h=768,
+         resize=fit,
+         w=1024,
+         
+         },
+         medium={
+         h=450,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=255,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/GLELjJ0QoM",
+         
+         }),
+  
+  },
+  "favorite_count"=302,
+  favorited=0,
+  geo="<null>",
+  id=520636416045248512,
+  "id_str"=520636416045248512,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=34,
+  retweeted=0,
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="My morning hike is GORGEOUS. http://t.co/GLELjJ0QoM",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Wed Jul 30 15:55:46 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="I play a scientist on TV. Obsessive maker of things. Host of Mythbusters on the Discovery Channel.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="tested.com",
+        "expanded_url"="http://www.tested.com",
+        indices=(0,
+                 22),
+        url="http://t.co/XrPLB7ODn9",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=267,
+  "follow_request_sent"=0,
+  "followers_count"=1176658,
+  following=1,
+  "friends_count"=283,
+  "geo_enabled"=0,
+  id=15661871,
+  "id_str"=15661871,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=23460,
+  location="San Francisco",
+  name="Adam Savage",
+  notifications=0,
+  "profile_background_color"=2F3333,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/378800000163126575/Ywnj1ruy.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/378800000163126575/Ywnj1ruy.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/15661871/1406752944",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/458749057985282048/cre48Dcf_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/458749057985282048/cre48Dcf_normal.jpeg",
+  "profile_link_color"=FF3300,
+  "profile_sidebar_border_color"=000000,
+  "profile_sidebar_fill_color"=A0C5C7,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=donttrythis,
+  "statuses_count"=8591,
+  "time_zone"="Pacific Time (US & Canada)",
+  url="http://t.co/XrPLB7ODn9",
+  "utc_offset"="-25200",
+  verified=1,
+  
+  },
+  
+  },
+  {
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:05:05 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/30xSSZSgw0",
+         "expanded_url"="http://twitter.com/BethAmberly/status/520635322980642818/photo/1",
+         id=520635312348094464,
+         "id_str"=520635312348094464,
+         indices=(100,
+                  122),
+         "media_url"="http://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520635322980642818,
+         "source_status_id_str"=520635322980642818,
+         type=photo,
+         url="http://t.co/30xSSZSgw0",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=29110239,
+                   "id_str"=29110239,
+                   indices=(3,
+                            15),
+                   name="Beth Amber",
+                   "screen_name"=BethAmberly,
+                   
+                   },
+                   {
+                   id=378171907,
+                   "id_str"=378171907,
+                   indices=(57,
+                            70),
+                   name="Jamie Hyneman",
+                   "screen_name"=JamieNoTweet,
+                   
+                   },
+                   {
+                   id=15661871,
+                   "id_str"=15661871,
+                   indices=(75,
+                            87),
+                   name="Adam Savage",
+                   "screen_name"=donttrythis,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/30xSSZSgw0",
+         "expanded_url"="http://twitter.com/BethAmberly/status/520635322980642818/photo/1",
+         id=520635312348094464,
+         "id_str"=520635312348094464,
+         indices=(100,
+                  122),
+         "media_url"="http://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         "source_status_id"=520635322980642818,
+         "source_status_id_str"=520635322980642818,
+         type=photo,
+         url="http://t.co/30xSSZSgw0",
+         
+         }),
+  
+  },
+  "favorite_count"=0,
+  favorited=0,
+  geo="<null>",
+  id=520636149161672704,
+  "id_str"=520636149161672704,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=1,
+  retweeted=0,
+  "retweeted_status"={
+  contributors="<null>",
+  coordinates="<null>",
+  "created_at"="Fri Oct 10 18:01:48 +0000 2014",
+  entities={
+  hashtags=(),
+  media=({
+         "display_url"="pic.twitter.com/30xSSZSgw0",
+         "expanded_url"="http://twitter.com/BethAmberly/status/520635322980642818/photo/1",
+         id=520635312348094464,
+         "id_str"=520635312348094464,
+         indices=(83,
+                  105),
+         "media_url"="http://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/30xSSZSgw0",
+         
+         }),
+  symbols=(),
+  urls=(),
+  "user_mentions"=({
+                   id=378171907,
+                   "id_str"=378171907,
+                   indices=(40,
+                            53),
+                   name="Jamie Hyneman",
+                   "screen_name"=JamieNoTweet,
+                   
+                   },
+                   {
+                   id=15661871,
+                   "id_str"=15661871,
+                   indices=(58,
+                            70),
+                   name="Adam Savage",
+                   "screen_name"=donttrythis,
+                   
+                   }),
+  
+  },
+  "extended_entities"={
+  media=({
+         "display_url"="pic.twitter.com/30xSSZSgw0",
+         "expanded_url"="http://twitter.com/BethAmberly/status/520635322980642818/photo/1",
+         id=520635312348094464,
+         "id_str"=520635312348094464,
+         indices=(83,
+                  105),
+         "media_url"="http://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         "media_url_https"="https://pbs.twimg.com/media/BzmrDuIIYAABwkp.jpg",
+         sizes={
+         large={
+         h=1024,
+         resize=fit,
+         w=768,
+         
+         },
+         medium={
+         h=800,
+         resize=fit,
+         w=600,
+         
+         },
+         small={
+         h=453,
+         resize=fit,
+         w=340,
+         
+         },
+         thumb={
+         h=150,
+         resize=crop,
+         w=150,
+         
+         },
+         
+         },
+         type=photo,
+         url="http://t.co/30xSSZSgw0",
+         
+         }),
+  
+  },
+  "favorite_count"=5,
+  favorited=0,
+  geo="<null>",
+  id=520635322980642818,
+  "id_str"=520635322980642818,
+  "in_reply_to_screen_name"="<null>",
+  "in_reply_to_status_id"="<null>",
+  "in_reply_to_status_id_str"="<null>",
+  "in_reply_to_user_id"="<null>",
+  "in_reply_to_user_id_str"="<null>",
+  lang=en,
+  place="<null>",
+  "possibly_sensitive"=0,
+  "retweet_count"=1,
+  retweeted=0,
+  source="<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  text="One thing is for sure, I'm going to see @JamieNoTweet and @donttrythis next month! http://t.co/30xSSZSgw0",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Mon Apr 06 01:04:54 +0000 2009",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description=Human,
+  entities={
+  description={
+  urls=(),
+  
+  },
+  
+  },
+  "favourites_count"=5083,
+  "follow_request_sent"=0,
+  "followers_count"=232,
+  following=0,
+  "friends_count"=409,
+  "geo_enabled"=0,
+  id=29110239,
+  "id_str"=29110239,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=11,
+  location=Earth,
+  name="Beth Amber",
+  notifications=0,
+  "profile_background_color"=352726,
+  "profile_background_image_url"="http://abs.twimg.com/images/themes/theme5/bg.gif",
+  "profile_background_image_url_https"="https://abs.twimg.com/images/themes/theme5/bg.gif",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/29110239/1410397391",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/515328042152251392/MEltj2bH_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/515328042152251392/MEltj2bH_normal.jpeg",
+  "profile_link_color"=D02B55,
+  "profile_sidebar_border_color"=829D5E,
+  "profile_sidebar_fill_color"=99CC33,
+  "profile_text_color"=3E4415,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=BethAmberly,
+  "statuses_count"=9810,
+  "time_zone"="Eastern Time (US & Canada)",
+  url="<null>",
+  "utc_offset"="-14400",
+  verified=0,
+  
+  },
+  
+  },
+  source="<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  text="RT @BethAmberly: One thing is for sure, I'm going to see @JamieNoTweet and @donttrythis next month! http://t.co/30xSSZSgw0",
+  truncated=0,
+  user={
+  "contributors_enabled"=0,
+  "created_at"="Wed Jul 30 15:55:46 +0000 2008",
+  "default_profile"=0,
+  "default_profile_image"=0,
+  description="I play a scientist on TV. Obsessive maker of things. Host of Mythbusters on the Discovery Channel.",
+  entities={
+  description={
+  urls=(),
+  
+  },
+  url={
+  urls=({
+        "display_url"="tested.com",
+        "expanded_url"="http://www.tested.com",
+        indices=(0,
+                 22),
+        url="http://t.co/XrPLB7ODn9",
+        
+        }),
+  
+  },
+  
+  },
+  "favourites_count"=267,
+  "follow_request_sent"=0,
+  "followers_count"=1176658,
+  following=1,
+  "friends_count"=283,
+  "geo_enabled"=0,
+  id=15661871,
+  "id_str"=15661871,
+  "is_translation_enabled"=0,
+  "is_translator"=0,
+  lang=en,
+  "listed_count"=23460,
+  location="San Francisco",
+  name="Adam Savage",
+  notifications=0,
+  "profile_background_color"=2F3333,
+  "profile_background_image_url"="http://pbs.twimg.com/profile_background_images/378800000163126575/Ywnj1ruy.jpeg",
+  "profile_background_image_url_https"="https://pbs.twimg.com/profile_background_images/378800000163126575/Ywnj1ruy.jpeg",
+  "profile_background_tile"=0,
+  "profile_banner_url"="https://pbs.twimg.com/profile_banners/15661871/1406752944",
+  "profile_image_url"="http://pbs.twimg.com/profile_images/458749057985282048/cre48Dcf_normal.jpeg",
+  "profile_image_url_https"="https://pbs.twimg.com/profile_images/458749057985282048/cre48Dcf_normal.jpeg",
+  "profile_link_color"=FF3300,
+  "profile_sidebar_border_color"=000000,
+  "profile_sidebar_fill_color"=A0C5C7,
+  "profile_text_color"=333333,
+  "profile_use_background_image"=1,
+  protected=0,
+  "screen_name"=donttrythis,
+  "statuses_count"=8591,
+  "time_zone"="Pacific Time (US & Canada)",
+  url="http://t.co/XrPLB7ODn9",
+  "utc_offset"="-25200",
+  verified=1,
+  
+  },
+  
+  }
+  ]

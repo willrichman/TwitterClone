@@ -30,7 +30,7 @@ class NetworkController {
         self.profileImageQueue.maxConcurrentOperationCount = 6
     }
     
-    func fetchTimeLine (timelineType: String, userScreenname: String?, completionHandler: (errorDescription : String?, tweets : [Tweet]?) -> Void) {
+    func fetchTimeLine (timelineType: String, isRefresh: Bool, newestTweet: Tweet?, userScreenname: String?, completionHandler: (errorDescription : String?, tweets : [Tweet]?) -> Void) {
         let accountStore = ACAccountStore()
         let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
         
@@ -47,6 +47,7 @@ class NetworkController {
                 /* Set up our twitter request, depending on which timeline is requested*/
                 var timelineURL : NSURL?
                 var parameters: Dictionary<String, String>?
+                
                 switch timelineType {
                 case "HOME":
                     timelineURL = NSURL(string: "https://api.twitter.com/1.1/statuses/home_timeline.json")
@@ -57,6 +58,16 @@ class NetworkController {
                     println("That timeline type doesn't work")
                 }
                 
+                if isRefresh {
+                    if parameters != nil {
+                        parameters!["since_id"] = newestTweet!.id
+                    }
+                    else {
+                        parameters = ["since_id": newestTweet!.id]
+                    }
+                }
+                
+                /* Make request */
                 let twitterRequest = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: timelineURL, parameters: parameters)
                 twitterRequest.account = self.twitterAccount
                 
@@ -67,10 +78,6 @@ class NetworkController {
                             
                         case 200...299:
                             let tweets = Tweet.parseJSONDataIntoTweets(timeLineJSONData)
-                            //var error : NSError?
-                            //let JSONArray = NSJSONSerialization.JSONObjectWithData(timeLineJSONData, options: nil, error: &error) as? NSArray
-                            //println(JSONArray)
-                            //println(tweets?.count)
                             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                                 completionHandler(errorDescription: nil, tweets: tweets)
                             })
@@ -106,6 +113,18 @@ class NetworkController {
             let userProfileImage = UIImage(data: userProfileImageData, scale: UIScreen.mainScreen().scale)
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                 completionHandler(errorDescription: nil, tweetProfileImage: userProfileImage)
+            })
+        }
+    }
+    
+    func fetchBackgroundProfileImage (tweet: Tweet, completionHandler: (errorDescription : String?, backgroundProfileImage: UIImage?) -> Void) {
+        self.profileImageQueue.addOperationWithBlock { () -> Void in
+            let backgroundImageURL = NSURL(string: tweet.profileBackgroundImageURL)
+            println(tweet.profileBackgroundImageURL)
+            let backgroundImageData = NSData(contentsOfURL: backgroundImageURL)
+            let backgroundImage = UIImage(data: backgroundImageData)
+            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                completionHandler(errorDescription: nil, backgroundProfileImage: backgroundImage)
             })
         }
     }

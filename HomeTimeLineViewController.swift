@@ -10,6 +10,7 @@ import UIKit
 
 class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var userProfileBackgroundImage: UIImageView!
     @IBOutlet weak var userScreenNameLabel: UILabel!
     @IBOutlet weak var userProfileNameLabel: UILabel!
     @IBOutlet weak var userProfileImage: UIImageView!
@@ -18,14 +19,22 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     var timelineType = "HOME"
     var userTimelineShown : String?
     var tweetOrigin : Tweet?
+    var refreshControl : UIRefreshControl?
+    var imageCache = [String : UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerNib(UINib(nibName: "TimelineTweetTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TWEET_CELL")
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        NetworkController.controller.fetchTimeLine(timelineType, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
+        
+        /* Taken from stackOverflow http://stackoverflow.com/questions/24475792/how-to-use-pull-to-refresh-in-swift */
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl?.addTarget(self, action: "refreshTweets:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(self.refreshControl!)
+        
+        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: false, newestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
             } else {
@@ -37,12 +46,19 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         /* Taken from AppCoda http://www.appcoda.com/self-sizing-cells/ */
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        /* Comment here */
         if timelineType == "HOME" {
             self.tableView.tableHeaderView = nil
         } else if timelineType == "USER" {
             self.userScreenNameLabel.text = tweetOrigin?.screenName
             self.userProfileNameLabel.text = tweetOrigin?.profileName
-            self.userProfileImage.image = tweetOrigin?.profileImage
+            NetworkController.controller.fetchBackgroundProfileImage(self.tweetOrigin!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
+                self.userProfileBackgroundImage.contentMode = .ScaleAspectFill
+                self.userProfileBackgroundImage.clipsToBounds = true
+                self.userProfileBackgroundImage.image = tweetProfileImage
+            })
+            self.userProfileImage.image = self.imageCache[tweetOrigin!.screenName]
         }
     }
     
@@ -71,24 +87,22 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         cell.tweetTextLabel?.text = tweet?.text
         cell.userNameTextLabel?.text = tweet?.profileName
         cell.userScreenName?.text = ("@\(tweet!.screenName)")
-        if tweet?.profileImage != nil {
-            cell.profileImage?.image = tweet?.profileImage
+        
+        if let cachedProfileImage = self.imageCache[tweet!.screenName] {
+            cell.profileImage?.image = cachedProfileImage
         }
         else {
-            /* Download and set the profileImage */
             NetworkController.controller.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
-                let cellForImage = self.tableView.cellForRowAtIndexPath(indexPath) as TimelineTweetTableViewCell?
                 if errorDescription == nil {
-                    tweet?.profileImage = tweetProfileImage!
-                    cellForImage?.profileImage?.image = tweet?.profileImage
+                    self.imageCache[tweet!.screenName] = tweetProfileImage
+                    cell.profileImage?.image = tweetProfileImage
                 }
                 else {
-                    println(errorDescription)
-                    cell.profileImage?.image = tweet?.defaultProfileImage
+                    println("Error: \(errorDescription)")
                 }
             })
+
         }
-        
         
         cell.profileImage?.layer.borderColor = UIColor.whiteColor().CGColor;
         cell.profileImage?.layer.borderWidth = cell.profileImage!.frame.size.width * 0.05
@@ -106,5 +120,20 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         self.navigationController?.pushViewController(singleTweetVC, animated: true)
     }
     
-    
+    func refreshTweets (sender: AnyObject) {
+        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: true, newestTweet: self.tweets?[0], userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
+            if errorDescription != nil {
+                //alert the user that something went wrong
+                self.refreshControl?.endRefreshing()
+            } else {
+                println(self.tweets?.count)
+                var tweetsInterim : [Tweet]? = tweets
+                tweetsInterim! += self.tweets!
+                self.tweets = tweetsInterim!
+                println(self.tweets?.count)
+                self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
+            }
+        }
+    }
 }

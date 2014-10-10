@@ -38,6 +38,10 @@ class SingleTweetViewController: UIViewController {
         self.singleTweetProfileImage.image = self.tweetShown!.profileImage
         self.singleTweetFavoritesCount.text = String(self.tweetShown!.favoriteCount)
         self.singleTweetRTsCount.text = String(self.tweetShown!.retweetCount)
+        self.singleTweetProfileImage.layer.borderColor = UIColor.whiteColor().CGColor;
+        self.singleTweetProfileImage.layer.borderWidth = self.singleTweetProfileImage.frame.size.width * 0.05
+        self.singleTweetProfileImage.layer.cornerRadius = self.singleTweetProfileImage.frame.size.width * 0.1
+        self.singleTweetProfileImage.clipsToBounds = true
         
         let press = UITapGestureRecognizer(target: self, action: Selector("segueAction:"))
         self.singleTweetProfileImage.addGestureRecognizer(press)
