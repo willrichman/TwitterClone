@@ -34,7 +34,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         self.refreshControl?.addTarget(self, action: "refreshTweets:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.refreshControl!)
         
-        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: false, newestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
+        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: false, newestTweet: nil, oldestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
             } else {
@@ -95,7 +95,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
             NetworkController.controller.fetchProfileImage(tweet!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
                 if errorDescription == nil {
                     self.imageCache[tweet!.screenName] = tweetProfileImage
-                    cell.profileImage?.image = tweetProfileImage
+                    cell.profileImage?.image = self.imageCache[tweet!.screenName]
                 }
                 else {
                     println("Error: \(errorDescription)")
@@ -120,8 +120,24 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         self.navigationController?.pushViewController(singleTweetVC, animated: true)
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == tweets!.count - 1 {
+            NetworkController.controller.fetchTimeLine(timelineType, isRefresh: false, newestTweet: self.tweets?[0], oldestTweet: self.tweets?.last, userScreenname: userTimelineShown, completionHandler: { (errorDescription, tweets) -> Void in
+                if errorDescription != nil {
+                    //alert the user that something went wrong
+                } else {
+                    
+                    var interimTweets = tweets!
+                    let tweetRemoved = interimTweets.removeAtIndex(0)
+                    self.tweets? += interimTweets
+                    self.tableView.reloadData()
+                }
+            })
+        }
+    }
+    
     func refreshTweets (sender: AnyObject) {
-        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: true, newestTweet: self.tweets?[0], userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
+        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: true, newestTweet: self.tweets?[0], oldestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
                 self.refreshControl?.endRefreshing()
