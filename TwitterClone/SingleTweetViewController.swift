@@ -82,6 +82,7 @@ class SingleTweetViewController: UIViewController {
         userTimelineVC.userTimelineShown = userToDisplay
         userTimelineVC.timelineType = "USER"
         userTimelineVC.tweetOrigin = tweetShown
+        userTimelineVC.imageCache = self.imageCache
         self.navigationController?.pushViewController(userTimelineVC, animated: true)
     }
     

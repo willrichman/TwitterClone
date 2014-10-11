@@ -15,6 +15,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var userProfileNameLabel: UILabel!
     @IBOutlet weak var userProfileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var userProfileNameView: UIView!
     var tweets : [Tweet]?
     var timelineType = "HOME"
     var userTimelineShown : String?
@@ -34,7 +35,8 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         self.refreshControl?.addTarget(self, action: "refreshTweets:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.refreshControl!)
         
-        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: false, newestTweet: nil, oldestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
+        /* Fetch whichever timeline the view should hold, passing the user's screen name if it is a user timeline */
+        NetworkController.controller.fetchTimeLine(timelineType, newestTweet: nil, oldestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
             } else {
@@ -47,18 +49,41 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         
-        /* Comment here */
+        /* Format the table header if this is a user timeline, or hide it if it is the home timeline. */
         if timelineType == "HOME" {
             self.tableView.tableHeaderView = nil
         } else if timelineType == "USER" {
-            self.userScreenNameLabel.text = tweetOrigin?.screenName
+            self.userScreenNameLabel.text = ("@\(tweetOrigin!.screenName)")
             self.userProfileNameLabel.text = tweetOrigin?.profileName
             NetworkController.controller.fetchBackgroundProfileImage(self.tweetOrigin!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
                 self.userProfileBackgroundImage.contentMode = .ScaleAspectFill
                 self.userProfileBackgroundImage.clipsToBounds = true
                 self.userProfileBackgroundImage.image = tweetProfileImage
+                self.userProfileBackgroundImage.superview?.sendSubviewToBack(self.userProfileBackgroundImage)
             })
-            self.userProfileImage.image = self.imageCache[tweetOrigin!.screenName]
+            
+            /* Load profile image from cache if possible */
+            if let cachedProfileImage = self.imageCache[tweetOrigin!.screenName] {
+                self.userProfileImage.image = cachedProfileImage
+            }
+            else {
+                NetworkController.controller.fetchProfileImage(tweetOrigin!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
+                    if errorDescription == nil {
+                        self.imageCache[self.tweetOrigin!.screenName] = tweetProfileImage
+                        self.userProfileImage?.image = self.imageCache[self.tweetOrigin!.screenName]
+                    }
+                    else {
+                        println("Error: \(errorDescription)")
+                    }
+                })
+                
+            }
+
+            self.userProfileImage.layer.borderColor = UIColor.whiteColor().CGColor;
+            self.userProfileImage.layer.borderWidth = self.userProfileImage.frame.size.width * 0.05
+            self.userProfileImage.layer.cornerRadius = self.userProfileImage.frame.size.width * 0.1
+            self.userProfileImage.clipsToBounds = true
+            self.userProfileNameView.layer.cornerRadius = self.userProfileNameView.frame.size.width * 0.1
         }
     }
     
@@ -122,7 +147,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == tweets!.count - 1 {
-            NetworkController.controller.fetchTimeLine(timelineType, isRefresh: false, newestTweet: self.tweets?[0], oldestTweet: self.tweets?.last, userScreenname: userTimelineShown, completionHandler: { (errorDescription, tweets) -> Void in
+            NetworkController.controller.fetchTimeLine(timelineType, newestTweet: nil, oldestTweet: self.tweets?.last, userScreenname: userTimelineShown, completionHandler: { (errorDescription, tweets) -> Void in
                 if errorDescription != nil {
                     //alert the user that something went wrong
                 } else {
@@ -137,7 +162,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func refreshTweets (sender: AnyObject) {
-        NetworkController.controller.fetchTimeLine(timelineType, isRefresh: true, newestTweet: self.tweets?[0], oldestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
+        NetworkController.controller.fetchTimeLine(timelineType, newestTweet: self.tweets?[0], oldestTweet: nil, userScreenname: userTimelineShown) { (errorDescription, tweets) -> Void in
             if errorDescription != nil {
                 //alert the user that something went wrong
                 self.refreshControl?.endRefreshing()

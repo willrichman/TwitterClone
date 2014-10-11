@@ -30,7 +30,7 @@ class NetworkController {
         self.profileImageQueue.maxConcurrentOperationCount = 6
     }
     
-    func fetchTimeLine (timelineType: String, isRefresh: Bool, newestTweet: Tweet?, oldestTweet: Tweet?, userScreenname: String?, completionHandler: (errorDescription : String?, tweets : [Tweet]?) -> Void) {
+    func fetchTimeLine (timelineType: String, newestTweet: Tweet?, oldestTweet: Tweet?, userScreenname: String?, completionHandler: (errorDescription : String?, tweets : [Tweet]?) -> Void) {
         let accountStore = ACAccountStore()
         let accountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
         
@@ -58,21 +58,19 @@ class NetworkController {
                     println("That timeline type doesn't work")
                 }
                 
-                if isRefresh {
+                if newestTweet != nil {
                     if parameters != nil {
                         parameters!["since_id"] = newestTweet!.id
                     }
                     else {
                         parameters = ["since_id": newestTweet!.id]
                     }
-                } else {
-                    if oldestTweet != nil {
-                        if parameters != nil {
-                            parameters!["max_id"] = oldestTweet!.id
-                        }
-                        else {
-                            parameters = ["max_id" : oldestTweet!.id]
-                        }
+                } else if oldestTweet != nil {
+                    if parameters != nil {
+                        parameters!["max_id"] = oldestTweet!.id
+                    }
+                    else {
+                        parameters = ["max_id" : oldestTweet!.id]
                     }
                 }
                 
