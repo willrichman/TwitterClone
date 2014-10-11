@@ -52,8 +52,8 @@
 		156668D519E3098C001E21AB /* TwitterCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneTests.swift; sourceTree = "<group>"; };
 		156668E219E309EB001E21AB /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTimeLineViewController.swift; path = ../HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		156668E619E31370001E21AB /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = ../Tweet.swift; sourceTree = "<group>"; };
+		1590773B19E9ED8D00908ABC /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		15A70BA219E32DBE0072058F /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweet.json; sourceTree = "<group>"; };
-		15A70BA419E32FD40072058F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = TwitterClone/README; sourceTree = SOURCE_ROOT; };
 		15A70BA819E4784F0072058F /* TimelineTweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 		156668AE19E3098C001E21AB = {
 			isa = PBXGroup;
 			children = (
-				15A70BA419E32FD40072058F /* README */,
+				1590773B19E9ED8D00908ABC /* README */,
 				156668B919E3098C001E21AB /* TwitterClone */,
 				156668D219E3098C001E21AB /* TwitterCloneTests */,
 				156668B819E3098C001E21AB /* Products */,
