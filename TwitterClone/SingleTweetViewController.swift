@@ -10,6 +10,7 @@ import UIKit
 
 class SingleTweetViewController: UIViewController {
     
+    @IBOutlet weak var singleTweetBannerImage: UIImageView!
     @IBOutlet weak var singleTweetUserBar: UIView!
     @IBOutlet weak var singleTweetRTsCount: UILabel!
     @IBOutlet weak var singleTweetFavoritesCount: UILabel!
@@ -22,8 +23,6 @@ class SingleTweetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.singleTweetUserBar.layer.cornerRadius = 10
-        
         // Do any additional setup after loading the view.
     }
 
@@ -38,7 +37,7 @@ class SingleTweetViewController: UIViewController {
         self.singleTweetText.text = self.tweetShown!.text
         self.singleTweetFavoritesCount.text = String(self.tweetShown!.favoriteCount)
         self.singleTweetRTsCount.text = String(self.tweetShown!.retweetCount)
-        
+        self.singleTweetUserBar.layer.cornerRadius = self.singleTweetUserBar.frame.size.height * 0.1
         if let cachedProfileImage = self.imageCache[tweetShown!.screenName] {
             self.singleTweetProfileImage?.image = cachedProfileImage
         }
@@ -55,6 +54,14 @@ class SingleTweetViewController: UIViewController {
             
         }
 
+        NetworkController.controller.fetchBackgroundProfileImage(self.tweetShown!, completionHandler: { (errorDescription, tweetProfileImage) -> Void in
+            self.singleTweetBannerImage.contentMode = .ScaleAspectFill
+            self.singleTweetBannerImage.clipsToBounds = true
+            self.singleTweetBannerImage.image = tweetProfileImage
+            self.singleTweetBannerImage.superview?.sendSubviewToBack(self.singleTweetBannerImage)
+        })
+
+        
         self.singleTweetProfileImage.layer.borderColor = UIColor.whiteColor().CGColor;
         self.singleTweetProfileImage.layer.borderWidth = self.singleTweetProfileImage.frame.size.width * 0.05
         self.singleTweetProfileImage.layer.cornerRadius = self.singleTweetProfileImage.frame.size.width * 0.1
@@ -77,6 +84,7 @@ class SingleTweetViewController: UIViewController {
     */
     
     func segueAction(recognizer: UITapGestureRecognizer) {
+        println("Action Fired")
         let userTimelineVC = self.storyboard?.instantiateViewControllerWithIdentifier("TIMELINE_VC") as HomeTimeLineViewController
         let userToDisplay = tweetShown?.screenName
         userTimelineVC.userTimelineShown = userToDisplay

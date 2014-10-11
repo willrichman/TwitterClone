@@ -47,7 +47,7 @@ class Tweet {
         let normalRange = smallProfileImageURL.rangeOfString("_normal", options: nil, range: nil, locale: nil)
         self.profileImageURL = smallProfileImageURL.stringByReplacingCharactersInRange(normalRange!, withString: "_bigger")
         if let bannerURL = userProfile["profile_banner_url"] as? String {
-            self.profileBackgroundImageURL = bannerURL
+            self.profileBackgroundImageURL = ("\(bannerURL)/mobile_retina/")
         }
         else {
             self.profileBackgroundImageURL = self.defaultBanner

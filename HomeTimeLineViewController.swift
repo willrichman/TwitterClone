@@ -83,7 +83,7 @@ class HomeTimeLineViewController: UIViewController, UITableViewDataSource, UITab
             self.userProfileImage.layer.borderWidth = self.userProfileImage.frame.size.width * 0.05
             self.userProfileImage.layer.cornerRadius = self.userProfileImage.frame.size.width * 0.1
             self.userProfileImage.clipsToBounds = true
-            self.userProfileNameView.layer.cornerRadius = self.userProfileNameView.frame.size.width * 0.1
+            self.userProfileNameView.layer.cornerRadius = self.userProfileNameView.frame.size.height * 0.1
         }
     }
     
